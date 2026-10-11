@@ -283,7 +283,7 @@ section { scroll-margin-top: 84px; }
 
 /* ---------- selected work ---------- */
 .work-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr);
+  display: grid; grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem; margin-top: 1rem;
 }
 .work-card {
