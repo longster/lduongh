@@ -6,7 +6,10 @@
   --muted: #6d6d6d;
   --line: #e6e6e3;
   --accent: #ff8b00;
-  --accent-deep: #d96f00;
+  --accent-deep: #a85400;
+  --btn-bg: #141414;
+  --btn-text: #ffffff;
+  --on-accent: #141414;
   --card: #ffffff;
   --maxw: 1160px;
   --narrow: 820px;
@@ -23,6 +26,9 @@
     --line: #26262b;
     --accent: #ff9d2e;
     --accent-deep: #ff9d2e;
+    --btn-bg: #f4f4f2;
+    --btn-text: #0c0c0e;
+    --on-accent: #0c0c0e;
     --card: #141417;
   }
 }
@@ -40,7 +46,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-::selection { background: var(--accent); color: #fff; }
+::selection { background: var(--accent); color: var(--on-accent); }
 
 .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 2rem; }
 .wrap.narrow { max-width: var(--narrow); }
@@ -121,7 +127,7 @@ section { scroll-margin-top: 84px; }
   display: inline-flex; align-items: center; gap: 0.5rem;
   font-family: var(--display); font-size: 0.85rem; font-weight: 700;
   letter-spacing: 0.06em; text-decoration: none;
-  color: #fff; background: var(--ink);
+  color: var(--btn-text); background: var(--btn-bg);
   padding: 0.65rem 1.3rem; border-radius: 999px;
   transition: background 0.25s ease, transform 0.25s ease;
 }
@@ -290,10 +296,10 @@ section { scroll-margin-top: 84px; }
   color: var(--ink); transition: border-color 0.25s ease; border-radius: 0;
 }
 .field textarea { resize: vertical; min-height: 120px; }
-.field input:focus, .field textarea:focus { outline: none; border-bottom-color: var(--accent); }
+.field input:focus, .field textarea:focus { outline: none; border-bottom-color: var(--accent-deep); }
 #contactForm button {
   display: inline-flex; align-items: center; gap: 0.6rem;
-  background: var(--accent); color: #fff; border: none; cursor: pointer;
+  background: var(--accent); color: var(--on-accent); border: none; cursor: pointer;
   font-family: var(--display); font-weight: 700; font-size: 1rem;
   letter-spacing: 0.04em; padding: 1rem 2.4rem; border-radius: 999px;
   transition: transform 0.25s ease, background 0.25s ease;
