@@ -281,6 +281,24 @@ section { scroll-margin-top: 84px; }
   color: var(--accent-deep); min-width: 64px;
 }
 
+/* ---------- selected work ---------- */
+.work-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem; margin-top: 1rem;
+}
+.work-card {
+  border: 1px solid var(--line); border-radius: 14px;
+  padding: 2.4rem 2rem; background: var(--card);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+.work-card:hover { transform: translateY(-4px); border-color: var(--accent); }
+.work-num {
+  font-family: var(--display); font-weight: 300;
+  color: var(--accent-deep); letter-spacing: 0.12em;
+}
+.work-card h3 { font-size: 1.3rem; margin: 0.9rem 0 0.5rem; }
+.work-card p { color: var(--muted); }
+
 /* ---------- contact ---------- */
 #contactForm { max-width: 560px; margin: 0 auto; text-align: left; }
 .field { margin-bottom: 1.8rem; }
@@ -329,6 +347,7 @@ section { scroll-margin-top: 84px; }
   .hero { padding-top: 7.5rem; }
   .fact-row { grid-template-columns: 1fr; gap: 1.2rem; }
   .expert-list li { grid-template-columns: 56px 1fr; gap: 1.2rem; }
+  .work-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 640px) {
   .nav-links { display: none; }
