@@ -34,6 +34,23 @@
   // Footer year
   document.getElementById('year').textContent = new Date().getFullYear();
 
+  // Keep the hero photo corner cuts at a true 45 degrees, matching the
+  // logo mark, no matter the image aspect ratio.
+  var fitPhotoCuts = function () {
+    var img = document.querySelector('.hero-photo img');
+    if (!img) return;
+    var w = img.clientWidth, h = img.clientHeight;
+    if (!w || !h) return;
+    var c = w * 0.12;
+    var x = c / w * 100, y = c / h * 100;
+    img.style.clipPath = 'polygon(' + x.toFixed(2) + '% 0, 100% 0, 100% ' +
+      (100 - y).toFixed(2) + '%, ' + (100 - x).toFixed(2) + '% 100%, 0 100%, 0 ' + y.toFixed(2) + '%)';
+  };
+  fitPhotoCuts();
+  window.addEventListener('resize', fitPhotoCuts);
+  window.addEventListener('load', fitPhotoCuts);
+  if (document.fonts && document.fonts.ready) { document.fonts.ready.then(fitPhotoCuts); }
+
   // Contact form via FormSubmit AJAX
   var form = document.getElementById('contactForm');
   var status = form.querySelector('.form-status');
