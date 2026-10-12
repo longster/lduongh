@@ -324,7 +324,7 @@ section { scroll-margin-top: 84px; }
 .credo-kicker {
   font-family: var(--display); font-size: 0.8rem; font-weight: 700;
   letter-spacing: 0.28em; text-transform: uppercase;
-  color: #fff; margin-bottom: 1.8rem;
+  color: #fff; margin-bottom: 1.2rem;
 }
 .credo-line {
   font-family: var(--display);
