@@ -353,7 +353,7 @@ section { scroll-margin-top: 84px; }
 /* ---------- responsive ---------- */
 @media (max-width: 900px) {
   .hero-grid { grid-template-columns: 1fr; gap: 3rem; }
-  .hero-photo { max-width: 380px; }
+  .hero-photo { max-width: none; }
   .hero-photo img { height: auto; aspect-ratio: 1 / 1; }
   .hero { padding-top: 7.5rem; }
   .fact-row { grid-template-columns: 1fr; gap: 1.2rem; }
