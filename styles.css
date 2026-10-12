@@ -317,13 +317,13 @@ section { scroll-margin-top: 84px; }
     linear-gradient(to bottom right, transparent 50%, var(--paper) 50%) bottom right / 84px 84px no-repeat,
     repeating-linear-gradient(45deg, rgba(22,22,22,0.05) 0 2px, transparent 2px 18px),
     var(--accent);
-  color: #000;
+  color: #fff;
   padding: clamp(5rem, 11vw, 8rem) 0;
 }
 .credo-kicker {
   font-family: var(--display); font-size: 0.8rem; font-weight: 700;
   letter-spacing: 0.28em; text-transform: uppercase;
-  color: #000; margin-bottom: 1.8rem;
+  color: #fff; margin-bottom: 1.8rem;
 }
 .credo-line {
   font-family: var(--display);
@@ -333,6 +333,9 @@ section { scroll-margin-top: 84px; }
 .credo-line mark {
   background: #000; color: var(--accent);
   padding: 0.03em 0.3em;
+}
+@media (prefers-color-scheme: dark) {
+  .credo, .credo-kicker { color: #000; }
 }
 
 /* ---------- contact ---------- */
