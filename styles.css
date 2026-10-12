@@ -7,9 +7,10 @@
   --line: #e6e6e3;
   --accent: #ff8b00;
   --accent-deep: #a85400;
+  --accent-solid: #b45e00;
   --btn-bg: #141414;
   --btn-text: #ffffff;
-  --on-accent: #141414;
+  --on-accent: #ffffff;
   --card: #ffffff;
   --maxw: 1160px;
   --narrow: 820px;
@@ -26,6 +27,7 @@
     --line: #26262b;
     --accent: #ff9d2e;
     --accent-deep: #ff9d2e;
+    --accent-solid: #b45e00;
     --btn-bg: #f4f4f2;
     --btn-text: #0c0c0e;
     --on-accent: #0c0c0e;
@@ -46,7 +48,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-::selection { background: var(--accent); color: var(--on-accent); }
+::selection { background: var(--accent-solid); color: var(--on-accent); }
 
 .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 2rem; }
 .wrap.narrow { max-width: var(--narrow); }
@@ -127,12 +129,12 @@ section { scroll-margin-top: 84px; }
   display: inline-flex; align-items: center; gap: 0.5rem;
   font-family: var(--display); font-size: 0.85rem; font-weight: 700;
   letter-spacing: 0.06em; text-decoration: none;
-  color: #fff; background: #161616;
-  border: 2px solid var(--accent);
+  color: var(--ink); background: transparent;
+  border: 2px solid var(--accent-solid);
   padding: 0.55rem 1.2rem; border-radius: 999px;
   transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
 }
-.btn-connect:hover { background: var(--accent); color: var(--on-accent); transform: translateY(-1px); }
+.btn-connect:hover { background: var(--accent-solid); color: var(--on-accent); border-color: var(--accent-solid); transform: translateY(-1px); }
 
 /* ---------- hero ---------- */
 .hero {
@@ -175,12 +177,12 @@ section { scroll-margin-top: 84px; }
 .hero-socials { display: flex; gap: 0.8rem; }
 .hero-socials a {
   width: 46px; height: 46px; border-radius: 50%;
-  background: #161616; color: #fff;
-  border: 2px solid var(--accent);
+  background: transparent; color: var(--ink);
+  border: 2px solid var(--accent-solid);
   display: inline-flex; align-items: center; justify-content: center;
   transition: all 0.25s ease;
 }
-.hero-socials a:hover { background: var(--accent); color: var(--on-accent); border-color: var(--accent); transform: translateY(-2px); }
+.hero-socials a:hover { background: var(--accent-solid); color: var(--on-accent); border-color: var(--accent-solid); transform: translateY(-2px); }
 
 .hero-photo img {
   width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: top center;
@@ -322,24 +324,24 @@ section { scroll-margin-top: 84px; }
 .field input:focus, .field textarea:focus { outline: none; border-bottom-color: var(--accent-deep); }
 #contactForm button {
   display: inline-flex; align-items: center; gap: 0.6rem;
-  background: #161616; color: #fff;
-  border: 2px solid var(--accent); cursor: pointer;
+  background: transparent; color: var(--ink);
+  border: 2px solid var(--accent-solid); cursor: pointer;
   font-family: var(--display); font-weight: 700; font-size: 1rem;
   letter-spacing: 0.04em; padding: 0.9rem 2.3rem; border-radius: 999px;
   transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
 }
-#contactForm button:hover { background: var(--accent); color: var(--on-accent); transform: translateY(-2px); }
+#contactForm button:hover { background: var(--accent-solid); color: var(--on-accent); border-color: var(--accent-solid); transform: translateY(-2px); }
 .form-status { margin-top: 1.2rem; min-height: 1.6em; color: var(--muted); }
 
 .socials { display: flex; gap: 0.9rem; justify-content: center; margin-top: 3.5rem; }
 .socials a {
   width: 46px; height: 46px; border-radius: 50%;
-  background: #161616; color: #fff;
-  border: 2px solid var(--accent);
+  background: transparent; color: var(--ink);
+  border: 2px solid var(--accent-solid);
   display: inline-flex; align-items: center; justify-content: center;
   transition: all 0.25s ease;
 }
-.socials a:hover { background: var(--accent); color: var(--on-accent); border-color: var(--accent); transform: translateY(-3px); }
+.socials a:hover { background: var(--accent-solid); color: var(--on-accent); border-color: var(--accent-solid); transform: translateY(-3px); }
 
 /* ---------- footer ---------- */
 .site-footer { border-top: 1px solid var(--line); padding: 2rem 0; }
