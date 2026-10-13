@@ -338,6 +338,29 @@ section { scroll-margin-top: 84px; }
 .work-card h3 { font-size: 1.3rem; font-weight: 600; margin: 0.9rem 0 0.5rem; }
 .work-card p { color: var(--muted); }
 
+/* ---------- kind words ---------- */
+.quotes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-bottom: 2.5rem; }
+.quote-card {
+  border: 1px solid var(--line); border-radius: 14px;
+  padding: 2.4rem 2rem; background: var(--card);
+  display: flex; flex-direction: column; justify-content: space-between;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+.quote-card:hover { transform: translateY(-4px); border-color: var(--accent); }
+.quote-card blockquote {
+  font-family: var(--display); font-size: 1.28rem; font-weight: 600;
+  line-height: 1.45; letter-spacing: -0.01em; margin-bottom: 1.8rem;
+}
+.quote-card blockquote::before {
+  content: "\201C"; display: block;
+  font-size: 3.2rem; line-height: 1; color: var(--accent);
+  margin-bottom: 0.6rem; font-weight: 700;
+}
+.quote-card figcaption strong { display: block; font-family: var(--display); font-size: 1rem; font-weight: 700; }
+.quote-card figcaption span { color: var(--muted); font-size: 0.88rem; }
+.quotes-note { color: var(--muted); }
+.quotes-note a { color: var(--accent-deep); }
+
 /* ---------- credo ---------- */
 /* Corner triangles are painted to match the neighboring sections
    (work above uses --paper-alt, contact below uses --paper) so the
@@ -427,6 +450,7 @@ section { scroll-margin-top: 84px; }
   .fact-row { grid-template-columns: 1fr; gap: 1.2rem; }
   .expert-list { grid-template-columns: 1fr; }
   .expert-list li { grid-template-columns: 56px 1fr; gap: 1.2rem; }
+  .quotes-grid { grid-template-columns: 1fr; }
   .work-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 640px) {
