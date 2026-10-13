@@ -86,3 +86,27 @@
       });
   });
 })();
+
+/* ---------- theme toggle: auto -> light -> dark -> auto ---------- */
+(function () {
+  var btn = document.getElementById('themeToggle');
+  if (!btn) return;
+  var order = ['auto', 'light', 'dark'];
+  function get() {
+    try { return localStorage.getItem('ld-theme') || 'auto'; }
+    catch (e) { return 'auto'; }
+  }
+  function apply(t) {
+    var root = document.documentElement;
+    if (t === 'auto') root.removeAttribute('data-theme');
+    else root.setAttribute('data-theme', t);
+    try { localStorage.setItem('ld-theme', t); } catch (e) {}
+    btn.setAttribute('data-state', t);
+    btn.setAttribute('aria-label', 'Theme: ' + t + '. Activate to change.');
+  }
+  btn.addEventListener('click', function () {
+    var next = order[(order.indexOf(get()) + 1) % order.length];
+    apply(next);
+  });
+  apply(get());
+})();
