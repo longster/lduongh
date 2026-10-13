@@ -128,6 +128,7 @@ section { scroll-margin-top: 84px; }
 :root[data-theme="dark"] .logo-dark { display: none; }
 :root[data-theme="dark"] .logo-light { display: inline-block; }
 
+.hero-role .arrow { color: var(--accent); font-weight: 400; }
 .nav-actions { display: flex; align-items: center; gap: 1rem; }
 .theme-toggle {
   display: inline-flex; align-items: center; justify-content: center;
