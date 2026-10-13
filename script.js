@@ -68,7 +68,7 @@
       return;
     }
     status.textContent = 'Sending…';
-    fetch('https://formsubmit.co/ajax/longster@outlook.com', {
+    fetch('https://formsubmit.co/ajax/b55badcaab79fad692f7c61c3d059b3b', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify({
