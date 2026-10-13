@@ -19,7 +19,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --paper: #0c0c0e;
     --paper-alt: #131316;
     --ink: #f4f4f2;
@@ -33,6 +33,20 @@
     --on-accent: #0c0c0e;
     --card: #141417;
   }
+}
+:root[data-theme="dark"] {
+  --paper: #0c0c0e;
+  --paper-alt: #131316;
+  --ink: #f4f4f2;
+  --muted: #a3a3a3;
+  --line: #26262b;
+  --accent: #ff9d2e;
+  --accent-deep: #ff9d2e;
+  --accent-solid: #ff9d2e;
+  --btn-bg: #f4f4f2;
+  --btn-text: #0c0c0e;
+  --on-accent: #0c0c0e;
+  --card: #141417;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -108,9 +122,25 @@ section { scroll-margin-top: 84px; }
 .nav-logo:hover { color: var(--accent); }
 .logo-light { display: none; }
 @media (prefers-color-scheme: dark) {
-  .logo-dark { display: none; }
-  .logo-light { display: inline-block; }
+  :root:not([data-theme="light"]) .logo-dark { display: none; }
+  :root:not([data-theme="light"]) .logo-light { display: inline-block; }
 }
+:root[data-theme="dark"] .logo-dark { display: none; }
+:root[data-theme="dark"] .logo-light { display: inline-block; }
+
+.nav-actions { display: flex; align-items: center; gap: 1rem; }
+.theme-toggle {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 42px; height: 42px; border-radius: 50%;
+  background: transparent; border: 2px solid var(--line);
+  color: var(--ink); cursor: pointer;
+  transition: border-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+.theme-toggle:hover { border-color: var(--accent-solid); color: var(--accent); transform: translateY(-2px); }
+.theme-toggle svg { display: none; }
+.theme-toggle[data-state="auto"] .tt-auto { display: block; }
+.theme-toggle[data-state="light"] .tt-sun { display: block; }
+.theme-toggle[data-state="dark"] .tt-moon { display: block; }
 
 .nav-links { display: flex; gap: 2.2rem; }
 .nav-links a {
@@ -336,9 +366,13 @@ section { scroll-margin-top: 84px; }
   padding: 0.03em 0.3em;
 }
 @media (prefers-color-scheme: dark) {
-  .credo, .credo-kicker { color: #000; }
-  .credo-line mark { background: #000; }
+  :root:not([data-theme="light"]) .credo,
+  :root:not([data-theme="light"]) .credo-kicker { color: #000; }
+  :root:not([data-theme="light"]) .credo-line mark { background: #000; }
 }
+:root[data-theme="dark"] .credo,
+:root[data-theme="dark"] .credo-kicker { color: #000; }
+:root[data-theme="dark"] .credo-line mark { background: #000; }
 
 /* ---------- contact ---------- */
 #contactForm { max-width: 560px; margin: 0 auto; text-align: left; }
