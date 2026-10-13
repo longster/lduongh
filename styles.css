@@ -339,7 +339,7 @@ section { scroll-margin-top: 84px; }
 .work-card p { color: var(--muted); }
 
 /* ---------- kind words ---------- */
-.quotes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-bottom: 2.5rem; }
+.quotes-grid { display: grid; grid-template-columns: 1fr; gap: 1.6rem; margin-bottom: 2.5rem; }
 .quote-card {
   border: 1px solid var(--line); border-radius: 14px;
   padding: 2.4rem 2rem; background: var(--card);
@@ -450,7 +450,6 @@ section { scroll-margin-top: 84px; }
   .fact-row { grid-template-columns: 1fr; gap: 1.2rem; }
   .expert-list { grid-template-columns: 1fr; }
   .expert-list li { grid-template-columns: 56px 1fr; gap: 1.2rem; }
-  .quotes-grid { grid-template-columns: 1fr; }
   .work-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 640px) {
