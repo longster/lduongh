@@ -363,11 +363,11 @@ section { scroll-margin-top: 84px; }
 
 /* ---------- credo ---------- */
 /* Corner triangles are painted to match the neighboring sections
-   (work above uses --paper-alt, contact below uses --paper) so the
+   (kind words above uses --paper, contact below uses --paper) so the
    45 degree cuts blend seamlessly instead of showing the page bg. */
 .credo {
   background:
-    linear-gradient(to bottom right, var(--paper-alt) 50%, transparent 50%) top left / 84px 84px no-repeat,
+    linear-gradient(to bottom right, var(--paper) 50%, transparent 50%) top left / 84px 84px no-repeat,
     linear-gradient(to bottom right, transparent 50%, var(--paper) 50%) bottom right / 84px 84px no-repeat,
     repeating-linear-gradient(45deg, rgba(22,22,22,0.05) 0 2px, transparent 2px 18px),
     var(--accent);
