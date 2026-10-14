@@ -370,8 +370,8 @@ section { scroll-margin-top: 84px; }
 .case-stat { border: 1px solid var(--line); border-radius: 14px; padding: 1.8rem; background: var(--card); }
 .case-stat .num { font-family: var(--display); font-size: 2.4rem; font-weight: 700; color: var(--accent-deep); line-height: 1.1; }
 .case-stat p { margin: 0.5rem 0 0; font-size: 0.98rem; color: var(--muted); }
-.scenario-card { border: 1px solid var(--line); border-radius: 14px; padding: 2rem; background: var(--card); margin: 0 0 1.5rem; display: grid; grid-template-columns: 360px 1fr; gap: 2rem; align-items: start; }
-.scenario-card h3 { margin-top: 0; grid-column: 2; grid-row: 1; }
+.scenario-card { border: 1px solid var(--line); border-radius: 14px; padding: 2rem; background: var(--card); margin: 0 0 1.5rem; display: grid; grid-template-columns: 360px 1fr; gap: 0.5rem 2rem; align-items: start; }
+.scenario-card h3 { margin-top: 0; margin-bottom: 0.3rem; grid-column: 2; grid-row: 1; }
 .scenario-card ul { margin-bottom: 0; grid-column: 2; grid-row: 2; }
 .scenario-card li strong { color: var(--ink); }
 .scenario-video { display: block; width: 100%; max-width: 360px; border: 1px solid var(--line); border-radius: 14px; grid-column: 1; grid-row: 1 / span 2; }
