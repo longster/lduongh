@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UH Mobile Maps, Case Study by Long Duong</title>
+<meta name="description" content="Evidence based redesign of University of Houston campus maps. Five usability test scenarios with measured pass rates, task times, and difficulty ratings guided the new experience.">
+<link rel="canonical" href="https://longster.github.io/lduongh/case-studies/uh-mobile-maps.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Long Duong">
+<meta property="og:title" content="UH Mobile Maps, Case Study by Long Duong">
+<meta property="og:description" content="Evidence based redesign of University of Houston campus maps. Five usability test scenarios with measured pass rates, task times, and difficulty ratings guided the new experience.">
+<meta property="og:url" content="https://longster.github.io/lduongh/case-studies/uh-mobile-maps.html">
+<meta property="og:image" content="https://longster.github.io/lduongh/images/case-studies/uh-header.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="UH Mobile Maps, Case Study by Long Duong">
+<meta name="twitter:description" content="Evidence based redesign of University of Houston campus maps. Five usability test scenarios with measured pass rates, task times, and difficulty ratings guided the new experience.">
+<meta name="twitter:image" content="https://longster.github.io/lduongh/images/case-studies/uh-header.jpg">
+<link rel="icon" type="image/svg+xml" href="../images/logo.svg" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/svg+xml" href="../images/logo-white.svg" media="(prefers-color-scheme: dark)">
+<link rel="apple-touch-icon" href="../favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+<script>
+(function(){try{var t=localStorage.getItem('ld-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+<link rel="stylesheet" href="../styles.css?v=28">
+</head>
+<body>
+<canvas id="bgCanvas" aria-hidden="true"></canvas>
+
+<header class="site-nav" id="siteNav">
+  <a class="nav-logo" href="../#top" aria-label="Back to top">
+    <svg viewBox="0 0 150 153.76" width="30" height="31" aria-hidden="true"><path fill="currentColor" d="M58,82.65s3,16,25,16v28.14c-21,0-52.8-14.17-52.8-44.31,0-7.07.07-13.51.07-19.3L0,93.46c0,.16.08.32.12.48L0,93.88v59.88H92.09L92,71S89,55,67,55V26.86c20,0,52.84,14.17,52.84,44.31,0,6.92-.07,13.24-.07,18.93L150,59.88v0l0,0V0H57.93Z"/></svg>
+  </a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="../#about">About</a>
+    <a href="../#expertise">Expertise</a>
+    <a href="../#experience">Experience</a>
+    <a href="../#work">Work</a>
+  </nav>
+  <div class="nav-actions">
+    <button class="theme-toggle" id="themeToggle" data-state="auto" aria-label="Theme: auto. Activate to change.">
+      <svg class="tt-auto" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor"/></svg>
+      <svg class="tt-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2.5v2.3M12 19.2v2.3M2.5 12h2.3M19.2 12h2.3M5.2 5.2l1.6 1.6M17.2 17.2l1.6 1.6M18.8 5.2l-1.6 1.6M6.8 17.2l-1.6 1.6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <svg class="tt-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+    </button>
+    <a class="btn-connect" href="../#contact">Let's talk
+      <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="case-hero">
+    <div class="wrap narrow">
+      <p class="kicker reveal">Case Study</p>
+      <h1 class="reveal">UH Mobile Maps</h1>
+      <p class="case-lede reveal">The University of Houston is a public university helping students pursue learning, discovery, leadership, and engagement. This project found opportunities to present parking capacity, accommodate multiple location services, and enhance the overall experience.</p>
+      <div class="case-meta reveal">
+        <div>
+          <h2>Role</h2>
+          <p>Lead UI/UX Designer, responsible for the interactive prototype, user interface, and user testing.</p>
+        </div>
+        <div>
+          <h2>Timeline</h2>
+          <p>About 3 months from start to finish. Three teams of 10 to 12 people from marketing, IT, and the map committee.</p>
+        </div>
+        <div>
+          <h2>Context</h2>
+          <p>The pandemic began during the project. The director left shortly after kickoff. No baseline metrics on the existing maps. The university was very decentralized.</p>
+        </div>
+        <div>
+          <h2>Audience</h2>
+          <p>Students, visitors, faculty, staff, alumni, donors, and professionals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-body">
+    <div class="wrap narrow">
+      <figure class="case-figure reveal">
+        <img src="../images/case-studies/uh-header.jpg" alt="University of Houston Maps" width="1600" height="640">
+        <figcaption>University of Houston Maps</figcaption>
+      </figure>
+
+      <h2 class="reveal">Situation</h2>
+      <p class="reveal">The UH maps used third party software called MapBox, which gives developers the tools to build mapping, navigation, and search experiences within the UH campus. The mapping technology works with the Bootstrap framework as a graphical user interface to bridge the interaction between the user and the technology.</p>
+      <p class="reveal">Upon joining the team, the map was published without any user research to determine its usability, applicability, and improvements. My responsibility was to plan and perform user research to identify user objectives, assess UI issues, prototype, design, and validate through user testing.</p>
+      <div class="case-screens reveal">
+        <figure>
+          <img src="../images/case-studies/uh-old-ui.jpg" alt="Old map user interface" width="640" height="1280" loading="lazy">
+          <figcaption>User interface</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/case-studies/uh-old-options.jpg" alt="Old map menu options" width="640" height="1280" loading="lazy">
+          <figcaption>Menu options</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/case-studies/uh-old-detail.jpg" alt="Old map detailed information" width="640" height="1280" loading="lazy">
+          <figcaption>Detailed information</figcaption>
+        </figure>
+      </div>
+
+      <h2 class="reveal">Process</h2>
+      <p class="reveal">After I gathered the requirements and objectives, I followed this process to uncover issues and opportunities:</p>
+      <ul class="reveal">
+        <li><strong>Assessment.</strong> Conducted user interviews and explored the existing map.</li>
+        <li><strong>Defined the problem.</strong> Identified pain points and issues.</li>
+        <li><strong>Ideation &amp; design.</strong> Hypothesized, created, and proposed potential solutions.</li>
+        <li><strong>User testing.</strong> Developed a plan, gathered participants, and performed testing.</li>
+      </ul>
+
+      <h3 class="reveal">Assessment</h3>
+      <p class="reveal">I explored and navigated the maps to determine the questions to ask, then conversed with peers and random users about their experience:</p>
+      <ul class="reveal">
+        <li>What are the areas you look for on UH maps?</li>
+        <li>What action prevents you from your main goal?</li>
+        <li>What elements confused you?</li>
+      </ul>
+
+      <h3 class="reveal">Define the Problem</h3>
+      <p class="reveal">Once I synthesized their feedback and available data, I identified issues that needed attention:</p>
+      <ul class="reveal">
+        <li>Architecture &amp; organization</li>
+        <li>Endless &amp; indistinguishable icons</li>
+        <li>Missing key functionality &amp; services</li>
+      </ul>
+      <p class="reveal">I determined three areas to solve: user interface scalability, garage parking capacity, and the end to end experience.</p>
+
+      <h3 class="reveal">Ideation &amp; Design</h3>
+      <p class="reveal">I worked to find the best solution, from sketching ideas to low and high fidelity screens. Design considerations included modular components, user journey, expansion and scalability, and visual design.</p>
+      <div class="case-screens four reveal">
+        <figure>
+          <img src="../images/case-studies/uh-new-ui.jpg" alt="New map user interface" width="640" height="1280" loading="lazy">
+          <figcaption>Initial screen</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/case-studies/uh-new-parking.jpg" alt="New map parking options" width="640" height="1280" loading="lazy">
+          <figcaption>Parking options</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/case-studies/uh-new-walking.jpg" alt="New map walking options" width="640" height="1280" loading="lazy">
+          <figcaption>Walking options</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/case-studies/uh-new-detail.jpg" alt="New map detailed information" width="640" height="1280" loading="lazy">
+          <figcaption>Detailed information</figcaption>
+        </figure>
+      </div>
+
+      <h3 class="reveal">User Testing</h3>
+      <p class="reveal">I determined the metrics and number of users, then performed user tests to validate the potential solution. Five student participants completed five scenarios, starting from the UH Maps landing page, reading their activities and thought process aloud. Each task was measured by task time, pass or fail, and complexity.</p>
+
+      <h2 class="reveal">Test Results</h2>
+      <p class="reveal">I developed a usability testing strategy using five participants and five tasks with an Adobe XD interactive prototype on desktop and laptop, instead of mobile devices. There were no baseline metrics to compare against the existing UH maps, but we now had a data point to guide the course of action and compare future iterations.</p>
+
+      <div class="scenario-card reveal">
+        <h3>Scenario 1: Locate options to eat on campus</h3>
+        <ul>
+          <li><strong>Task:</strong> You want to find a place to eat on campus. Identify the options that are available.</li>
+          <li><strong>Task time:</strong> Average 56.6s, high 180s, low 9s</li>
+          <li><strong>Pass:</strong> 80%</li>
+          <li><strong>Difficulty rating:</strong> 1.8 (1 easy to 5 hard)</li>
+          <li><strong>Observation:</strong> One person commented that the word "Explore" was not something she associated with food.</li>
+          <li><strong>Recommendation:</strong> Keep as is.</li>
+        </ul>
+      </div>
+
+      <div class="scenario-card reveal">
+        <h3>Scenario 2: Find a list of parking garages</h3>
+        <ul>
+          <li><strong>Task:</strong> You are on the way to visit UH campus and need a place to park. Find a list of parking garages that you can choose from.</li>
+          <li><strong>Task time:</strong> Average 19.8s, high 45s, low 8s</li>
+          <li><strong>Pass:</strong> 60%</li>
+          <li><strong>Difficulty rating:</strong> 2 (1 easy to 5 hard)</li>
+          <li><strong>Observation:</strong> The color indicator related to district was a bit confusing. Users did not understand the purpose until they saw the connection to the building name. Two users interpreted the scenario and task differently between visitors and garages.</li>
+          <li><strong>Recommendation:</strong> Clarify the difference between visitor parking and garage, since a visitor can park in the garage.</li>
+        </ul>
+      </div>
+
+      <div class="scenario-card reveal">
+        <h3>Scenario 3: Identify the number of parking spaces available</h3>
+        <ul>
+          <li><strong>Task:</strong> Prior to getting to UH, you want to make sure there is enough parking available in a garage. Identify the number of parking spaces available in a garage.</li>
+          <li><strong>Task time:</strong> Average 11s, high 20s, low 7s</li>
+          <li><strong>Pass:</strong> 100%</li>
+          <li><strong>Difficulty rating:</strong> 1 (1 easy to 5 hard)</li>
+          <li><strong>Observation:</strong> No major issue.</li>
+          <li><strong>Recommendation:</strong> Keep as is.</li>
+        </ul>
+      </div>
+
+      <div class="scenario-card reveal">
+        <h3>Scenario 4: Share your location with a friend</h3>
+        <ul>
+          <li><strong>Task:</strong> You are meeting a friend on campus. You have arrived and are currently parked in a garage, but your friend has not arrived and is lost. Identify the menu option that will let you share your current location with your friend.</li>
+          <li><strong>Task time:</strong> Average 44.4s, high 84s, low 12s</li>
+          <li><strong>Pass:</strong> 60%</li>
+          <li><strong>Difficulty rating:</strong> 3.8 (1 easy to 5 hard)</li>
+          <li><strong>Observation:</strong> Everyone went to the "More" option and was looking to share from the list view rather than the detail page. Some users could not find the geolocation button (the menu covered it). One person mentioned no drag and drop pin to view and share location.</li>
+          <li><strong>Recommendation:</strong> Add the share option in the More option and list page. Add the share and move geo button above the menu or below the search bar.</li>
+        </ul>
+      </div>
+
+      <div class="scenario-card reveal">
+        <h3>Scenario 5: Locate alternative modes of transportation</h3>
+        <ul>
+          <li><strong>Task:</strong> You are on UH campus and you need a way to get around other than walking. Locate information about different modes of transportation available to you.</li>
+          <li><strong>Task time:</strong> Average 13.2s, high 26s, low 8s</li>
+          <li><strong>Pass:</strong> 100%</li>
+          <li><strong>Difficulty rating:</strong> 1.8 (1 easy to 5 hard)</li>
+          <li><strong>Observation:</strong> One user commented that the "More" option is associated as a configuration or setting. One identified the alternative transportation, but he was looking for shuttle transportation.</li>
+          <li><strong>Recommendation:</strong> Add shuttle in the alternative modes of transportation.</li>
+        </ul>
+      </div>
+
+      <h2 class="reveal">Conclusion</h2>
+      <p class="reveal">Ideally, establishing baseline metrics on the existing maps would have allowed a viable comparison against the new solution, but time and resources were limited.</p>
+      <p class="reveal">Transportation methods and terminology were the main improvements needed based on feedback. During user testing, users frequently looked for a shuttle, geolocation buttons, pin-drop view, and share options. The terminology used was also a prominent issue to be re-evaluated. The "Explore" option was not something a user would associate with food, and the "More" button correlated as an additional configuration or setting.</p>
+      <p class="reveal">My analysis provided a clear line of sight to gaps, which will help navigate future iterations, provide evidence based improvements, and formulate educated recommendations. I minimized assumptions by testing and focused on the end user's perspective. This process aimed to help make an informed decision on the next step: extend UI/UX from mobile to desktop platform.</p>
+
+      <div class="case-cta reveal">
+        <p>Like what you see? <a href="../#contact">Let's talk</a>.</p>
+      </div>
+      <nav class="case-nav reveal" aria-label="Case study navigation">
+        <a href="../#work">&larr; Back to selected work</a>
+        <a href="cpanel-store.html">Next: cPanel Store &rarr;</a>
+      </nav>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <a class="foot-logo" href="../#top" aria-label="Back to top">
+      <svg viewBox="0 0 150 153.76" width="30" height="31" aria-hidden="true"><path fill="currentColor" d="M58,82.65s3,16,25,16v28.14c-21,0-52.8-14.17-52.8-44.31,0-7.07.07-13.51.07-19.3L0,93.46c0,.16.08.32.12.48L0,93.88v59.88H92.09L92,71S89,55,67,55V26.86c20,0,52.84,14.17,52.84,44.31,0,6.92-.07,13.24-.07,18.93L150,59.88v0l0,0V0H57.93Z"/></svg>
+    </a>
+    <div class="foot-row">
+      <p>© <span id="year">2026</span> Long Duong.</p>
+      <p>Designed &amp; built with care in Houston.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../script.js?v=28"></script>
+</body>
+</html>
