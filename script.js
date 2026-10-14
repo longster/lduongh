@@ -51,8 +51,9 @@
   window.addEventListener('load', fitPhotoCuts);
   if (document.fonts && document.fonts.ready) { document.fonts.ready.then(fitPhotoCuts); }
 
-  // Contact form via FormSubmit AJAX
+  // Contact form via FormSubmit AJAX (homepage only; case study pages have no form)
   var form = document.getElementById('contactForm');
+  if (!form) return;
   var status = form.querySelector('.form-status');
   form.addEventListener('submit', function (ev) {
     ev.preventDefault();
