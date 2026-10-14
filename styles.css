@@ -358,12 +358,12 @@ section { scroll-margin-top: 84px; }
 .case-body li { margin-bottom: 0.5rem; }
 .case-figure { margin: 2.2rem 0 2.8rem; }
 .case-figure img { width: 100%; height: auto; display: block; border: 1px solid var(--line); border-radius: 14px; }
-.case-figure figcaption { color: var(--muted); font-size: 0.92rem; margin-top: 0.7rem; }
+.case-figure figcaption { color: var(--muted); font-size: 0.92rem; margin-top: 0.7rem; text-align: center; }
 .case-screens { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; margin: 2.2rem 0 2.8rem; }
 .case-screens.four { grid-template-columns: repeat(4, 1fr); }
 .case-screens figure { margin: 0; }
 .case-screens img { width: 100%; height: auto; display: block; border: 1px solid var(--line); border-radius: 14px; }
-.case-screens figcaption { color: var(--muted); font-size: 0.88rem; margin-top: 0.6rem; }
+.case-screens figcaption { color: var(--muted); font-size: 0.88rem; margin-top: 0.6rem; text-align: center; }
 .case-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin: 2.2rem 0 2.8rem; max-width: 760px; }
 .case-stats.three { grid-template-columns: repeat(3, 1fr); }
 .case-stats.four { grid-template-columns: repeat(4, 1fr); }
