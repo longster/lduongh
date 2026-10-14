@@ -340,7 +340,7 @@ section { scroll-margin-top: 84px; }
 }
 .work-card:hover { transform: translateY(-4px); border-color: var(--accent); }
 .work-thumb { display: block; overflow: hidden; aspect-ratio: 16/10; border-bottom: 1px solid var(--line); }
-.work-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; }
+.work-thumb img { width: 100%; height: 100%; object-fit: cover; object-position: left center; display: block; transition: transform 0.4s ease; }
 .work-card:hover .work-thumb img { transform: scale(1.04); }
 .work-card .work-arrow { color: var(--accent-deep); font-weight: 400; }
 
