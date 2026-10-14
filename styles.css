@@ -374,10 +374,9 @@ section { scroll-margin-top: 84px; }
 .scenario-card h3 { margin-top: 0; }
 .scenario-card ul { margin-bottom: 0; }
 .scenario-card li strong { color: var(--ink); }
-.case-cta { margin-top: 4.5rem; padding-top: 2.5rem; border-top: 1px solid var(--line); }
-.case-cta p { font-size: 1.25rem; }
-.case-cta a { color: var(--accent-deep); text-decoration: none; font-weight: 700; }
-.case-cta a:hover { text-decoration: underline; }
+.case-cta { margin-top: 4.5rem; padding: 2.8rem 2rem; border: 1px solid var(--line); border-radius: 14px; background: var(--card); text-align: center; }
+.case-cta p { font-size: 1.4rem; font-weight: 600; margin: 0 0 1.4rem; }
+.case-cta .btn-connect { font-size: 0.95rem; padding: 0.7rem 1.5rem; }
 .case-icon-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5rem; margin: 2.5rem 0 3rem; text-align: center; }
 .case-icon-row svg { width: 56px; height: 56px; margin-bottom: 1.2rem; }
 .case-icon-row p { margin: 0; font-size: 1rem; line-height: 1.65; }
