@@ -439,17 +439,15 @@ section { scroll-margin-top: 84px; }
 .quotes-note a { color: var(--accent-deep); }
 
 /* ---------- credo ---------- */
-/* Corner triangles are painted to match the neighboring sections
-   (kind words above uses --paper, contact below uses --paper) so the
-   45 degree cuts blend seamlessly instead of showing the page bg. */
+/* Corners are cut out with clip-path so the ambient canvas background
+   shows through, instead of painting opaque triangles over it. */
 .credo {
   background:
-    linear-gradient(to bottom right, var(--paper) 50%, transparent 50%) top left / 84px 84px no-repeat,
-    linear-gradient(to bottom right, transparent 50%, var(--paper) 50%) bottom right / 84px 84px no-repeat,
     repeating-linear-gradient(45deg, rgba(22,22,22,0.05) 0 2px, transparent 2px 18px),
     var(--accent);
   color: #fff;
   padding: clamp(5rem, 11vw, 8rem) 0;
+  clip-path: polygon(84px 0, 100% 0, 100% calc(100% - 84px), calc(100% - 84px) 100%, 0 100%, 0 84px);
 }
 .credo-kicker {
   font-family: var(--display); font-size: 0.8rem; font-weight: 700;
