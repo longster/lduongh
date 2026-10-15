@@ -293,14 +293,17 @@
     var scrollTop = 0;
 
     // Largest rect that fits the viewport with padding, never larger
-    // than the image's natural size, so zooming never goes blurry.
-    var fitRect = function (img) {
+    // than the image's natural size, so zooming never goes blurry,
+    // and never smaller than the size already on screen, so tapping
+    // a full-width screenshot on a phone never shrinks it.
+    var fitRect = function (img, shown) {
       var pad = 24;
       var availW = window.innerWidth - pad * 2;
       var availH = window.innerHeight - pad * 2;
       var naturalW = img.naturalWidth || img.width;
       var naturalH = img.naturalHeight || img.height;
       var scale = Math.min(1, availW / naturalW, availH / naturalH);
+      if (shown) { scale = Math.max(scale, shown.width / naturalW); }
       var w = Math.round(naturalW * scale);
       var h = Math.round(naturalH * scale);
       return {
@@ -323,7 +326,7 @@
     };
 
     var onResize = function () {
-      if (clone && originImg) { setRect(clone, fitRect(originImg)); }
+      if (clone && originImg) { setRect(clone, fitRect(originImg, originImg.getBoundingClientRect())); }
     };
 
     var closeZoom = function () {
@@ -383,7 +386,7 @@
       requestAnimationFrame(function () {
         requestAnimationFrame(function () {
           backdrop.classList.add('is-open');
-          if (clone) { setRect(clone, fitRect(img)); }
+          if (clone) { setRect(clone, fitRect(img, rect)); }
         });
       });
     };
