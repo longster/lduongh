@@ -381,6 +381,10 @@ section { scroll-margin-top: 84px; }
 .scenario-card .scenario-lines p:last-child { margin-bottom: 0; }
 .scenario-card .scenario-data-head { margin-top: 2.2rem; font-weight: 700; }
 .scenario-card li strong { color: var(--ink); }
+.scenario-card-text { grid-template-columns: 1fr; }
+.scenario-card-text h3 { grid-column: 1; grid-row: 1; display: flex; align-items: center; gap: 0.75rem; }
+.scenario-card-text ul { grid-column: 1; grid-row: 2; margin-bottom: 0; }
+.scenario-icon { width: 28px; height: 28px; flex-shrink: 0; color: var(--accent-deep); }
 .scenario-video { display: block; width: 100%; max-width: 360px; border: 1px solid var(--line); border-radius: 14px; grid-column: 1; grid-row: 1 / span 4; }
 .case-cta { margin-top: 4.5rem; padding: 2.8rem 2rem; border: 1px solid var(--line); border-radius: 14px; background: var(--card); text-align: center; }
 .case-cta p { font-size: 1.4rem; font-weight: 600; margin: 0 0 1.4rem; }
