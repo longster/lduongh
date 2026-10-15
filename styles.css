@@ -561,3 +561,22 @@ section { scroll-margin-top: 84px; }
   .scroll-cue { display: none; }
   .foot-row { flex-direction: column; text-align: center; gap: 0.4rem; }
 }
+
+/* ---------- image zoom (case studies) ---------- */
+figure.zoomable img { cursor: zoom-in; }
+figure.zoomable figcaption::after { content: " · Click to enlarge"; }
+.zoom-backdrop {
+  position: fixed; inset: 0; z-index: 90;
+  background: rgba(10, 10, 12, 0.72);
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+.zoom-backdrop.is-open { opacity: 1; pointer-events: auto; }
+.zoom-clone {
+  position: fixed; z-index: 91;
+  cursor: zoom-out; border-radius: 14px;
+  transition: left 0.3s ease, top 0.3s ease, width 0.3s ease, height 0.3s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .zoom-backdrop, .zoom-clone { transition: none; }
+}
