@@ -279,6 +279,129 @@
     });
   }
 
+  // Click-to-zoom for case study screenshots.
+  // Figures marked .zoomable open an enlarged copy that grows out of the
+  // thumbnail and back again. No modal, the reader stays on the page.
+  // Click the image or backdrop, or press Escape, to close.
+  (function () {
+    var triggers = document.querySelectorAll('figure.zoomable img');
+    if (!triggers.length) { return; }
+    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var backdrop = null;
+    var clone = null;
+    var originImg = null;
+    var scrollTop = 0;
+
+    // Largest rect that fits the viewport with padding, never larger
+    // than the image's natural size, so zooming never goes blurry.
+    var fitRect = function (img) {
+      var pad = 24;
+      var availW = window.innerWidth - pad * 2;
+      var availH = window.innerHeight - pad * 2;
+      var naturalW = img.naturalWidth || img.width;
+      var naturalH = img.naturalHeight || img.height;
+      var scale = Math.min(1, availW / naturalW, availH / naturalH);
+      var w = Math.round(naturalW * scale);
+      var h = Math.round(naturalH * scale);
+      return {
+        left: Math.round((window.innerWidth - w) / 2),
+        top: Math.round((window.innerHeight - h) / 2),
+        width: w,
+        height: h
+      };
+    };
+
+    var setRect = function (el, rect) {
+      el.style.left = rect.left + 'px';
+      el.style.top = rect.top + 'px';
+      el.style.width = rect.width + 'px';
+      el.style.height = rect.height + 'px';
+    };
+
+    var onKeyDown = function (e) {
+      if (e.key === 'Escape') { closeZoom(); }
+    };
+
+    var onResize = function () {
+      if (clone && originImg) { setRect(clone, fitRect(originImg)); }
+    };
+
+    var closeZoom = function () {
+      if (!clone || !originImg) { return; }
+      var rect = originImg.getBoundingClientRect();
+      var closing = clone;
+      var closingBackdrop = backdrop;
+      var closingOrigin = originImg;
+      var finished = false;
+      clone = null;
+      backdrop = null;
+      originImg = null;
+      document.removeEventListener('keydown', onKeyDown);
+      window.removeEventListener('resize', onResize);
+      document.documentElement.style.overflow = '';
+      window.scrollTo(0, scrollTop);
+      closingBackdrop.classList.remove('is-open');
+      var done = function () {
+        if (finished) { return; }
+        finished = true;
+        if (closing.parentNode) { closing.parentNode.removeChild(closing); }
+        if (closingBackdrop.parentNode) { closingBackdrop.parentNode.removeChild(closingBackdrop); }
+        closingOrigin.focus();
+      };
+      if (reduceMotion) {
+        done();
+      } else {
+        setRect(closing, { left: rect.left, top: rect.top, width: rect.width, height: rect.height });
+        closing.addEventListener('transitionend', done, { once: true });
+        setTimeout(done, 400);
+      }
+    };
+
+    var openZoom = function (img) {
+      if (clone) { return; }
+      originImg = img;
+      scrollTop = window.scrollY;
+      var rect = img.getBoundingClientRect();
+      backdrop = document.createElement('div');
+      backdrop.className = 'zoom-backdrop';
+      backdrop.addEventListener('click', closeZoom);
+      document.body.appendChild(backdrop);
+      clone = document.createElement('img');
+      clone.className = 'zoom-clone';
+      clone.src = img.currentSrc || img.src;
+      clone.alt = img.alt;
+      clone.setAttribute('tabindex', '-1');
+      clone.addEventListener('click', closeZoom);
+      document.body.appendChild(clone);
+      setRect(clone, { left: rect.left, top: rect.top, width: rect.width, height: rect.height });
+      document.documentElement.style.overflow = 'hidden';
+      document.addEventListener('keydown', onKeyDown);
+      window.addEventListener('resize', onResize);
+      clone.focus();
+      // Animate to the fitted size on the next frame, after the
+      // starting rect has been painted.
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () {
+          backdrop.classList.add('is-open');
+          if (clone) { setRect(clone, fitRect(img)); }
+        });
+      });
+    };
+
+    triggers.forEach(function (img) {
+      img.setAttribute('tabindex', '0');
+      img.setAttribute('role', 'button');
+      img.setAttribute('aria-label', 'Enlarge image: ' + img.alt);
+      img.addEventListener('click', function () { openZoom(img); });
+      img.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openZoom(img);
+        }
+      });
+    });
+  })();
+
   render();
   start();
 })();
