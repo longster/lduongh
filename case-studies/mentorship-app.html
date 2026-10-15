@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mentorship App, Case Study by Long Duong</title>
+<meta name="description" content="Self-driven concept for connecting mentors and mentees. Research, user flows, and high-fidelity designs for matching based on shared interests, location, and availability.">
+<link rel="canonical" href="https://lduong.com/case-studies/mentorship-app.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Long Duong">
+<meta property="og:title" content="Mentorship App, Case Study by Long Duong">
+<meta property="og:description" content="Self-driven concept for connecting mentors and mentees. Research, user flows, and high-fidelity designs for matching based on shared interests, location, and availability.">
+<meta property="og:url" content="https://lduong.com/case-studies/mentorship-app.html">
+<meta property="og:image" content="https://lduong.com/images/case-studies/mentor-header.png?v=1">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mentorship App, Case Study by Long Duong">
+<meta name="twitter:description" content="Self-driven concept for connecting mentors and mentees. Research, user flows, and high-fidelity designs for matching based on shared interests, location, and availability.">
+<meta name="twitter:image" content="https://lduong.com/images/case-studies/mentor-header.png?v=1">
+<link rel="icon" type="image/svg+xml" href="../images/logo.svg" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/svg+xml" href="../images/logo-white.svg" media="(prefers-color-scheme: dark)">
+<link rel="apple-touch-icon" href="../favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+<script>
+(function(){try{var t=localStorage.getItem('ld-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZN2ECQF2DN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-ZN2ECQF2DN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "u0vo263eke");
+</script>
+<link rel="stylesheet" href="../styles.css?v=49">
+</head>
+<body>
+<canvas id="bgCanvas" aria-hidden="true"></canvas>
+
+<header class="site-nav" id="siteNav">
+  <a class="nav-logo" href="../#top" aria-label="Back to top">
+    <svg viewBox="0 0 150 153.76" width="30" height="31" aria-hidden="true"><path fill="currentColor" d="M58,82.65s3,16,25,16v28.14c-21,0-52.8-14.17-52.8-44.31,0-7.07.07-13.51.07-19.3L0,93.46c0,.16.08.32.12.48L0,93.88v59.88H92.09L92,71S89,55,67,55V26.86c20,0,52.84,14.17,52.84,44.31,0,6.92-.07,13.24-.07,18.93L150,59.88v0l0,0V0H57.93Z"/></svg>
+  </a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="../#about">About</a>
+    <a href="../#expertise">Expertise</a>
+    <a href="../#experience">Experience</a>
+    <a href="../#work">Work</a>
+  </nav>
+  <div class="nav-actions">
+    <button class="theme-toggle" id="themeToggle" data-state="auto" aria-label="Theme: auto. Activate to change.">
+      <svg class="tt-auto" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor"/></svg>
+      <svg class="tt-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2.5v2.3M12 19.2v2.3M2.5 12h2.3M19.2 12h2.3M5.2 5.2l1.6 1.6M17.2 17.2l1.6 1.6M18.8 5.2l-1.6 1.6M6.8 17.2l-1.6 1.6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <svg class="tt-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+    </button>
+    <a class="btn-connect" href="../#contact">Let's talk
+      <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="case-hero">
+    <div class="wrap narrow">
+      <p class="kicker reveal">Case Study</p>
+      <h1 class="reveal">Mentorship App</h1>
+      <p class="case-concept reveal">Self-driven concept</p>
+      <p class="case-lede reveal">Mentor Connection was an exercise to refresh and extend my UX/UI knowledge. The goal was to help busy mentors connect with people seeking advice, and to design a seamless experience where mentors and mentees align on shared interests, location, and availability.</p>
+      <div class="case-meta reveal">
+        <div>
+          <h2>Role</h2>
+          <p>UX Research, Competitive Analysis, User Interview, Information Architecture, UI Design</p>
+        </div>
+        <div>
+          <h2>Timeline</h2>
+          <p>2 to 3 weeks to build the concept.</p>
+        </div>
+        <div>
+          <h2>Context</h2>
+          <p>Self-driven concept, built in free time after hours while employed full-time at cPanel.</p>
+        </div>
+        <div>
+          <h2>Audience</h2>
+          <p>Experts who want to give back, and people who want to learn and grow.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-body">
+    <div class="wrap">
+      <figure class="case-figure reveal">
+        <img src="../images/case-studies/mentor-header.png?v=1" alt="Mentor Connection app" width="1920" height="768">
+        <figcaption>Mentor Connection</figcaption>
+      </figure>
+    </div>
+    <div class="wrap narrow">
+
+      <h2 class="reveal">Situation</h2>
+      <p class="reveal">Mentoring is a relationship between two people with the goal of professional and personal development. The problem: mentors are often busy, committed to meetings, or have no time to connect with people seeking advice.</p>
+      <p class="reveal">This concept explores how to match the right mentor with the right mentee. Matching well is a crucial step, relying on both sides' commitment and dedication to make the relationship a successful one for both.</p>
+
+      <h2 class="reveal">Process</h2>
+      <p class="reveal">The process moved from research and ideation to design: open the questions, identify the underlying problem, construct viable solutions, and test theories for effectiveness.</p>
+      <div class="case-icon-row reveal">
+        <div>
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="27" cy="27" r="18"/><path d="M40 40 L54 54"/></svg>
+          <h3>Research</h3>
+          <p>Definition, mentorship types, market research, user interview.</p>
+        </div>
+        <div>
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="32" cy="32" r="22"/><path d="M24 26 A9 9 0 0 1 41 26 C41 31 36 31 34 35"/><circle cx="33" cy="44" r="1.6" fill="currentColor" stroke="none"/></svg>
+          <h3>Ideation</h3>
+          <p>Holistic user flow, onboarding user flow, connection user flow.</p>
+        </div>
+        <div>
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="10" y="12" width="44" height="40" rx="3"/><path d="M10 24 H54"/><path d="M26 24 V52"/></svg>
+          <h3>Interaction Design</h3>
+          <p>Sign-in, onboarding, connection, discovery, and communication.</p>
+        </div>
+      </div>
+
+      <h3 class="reveal">Research Phase</h3>
+      <p class="reveal">Reading articles on mentorship, I grouped mentorship into two buckets: professional and personal. The research helped uncover common traits in how people connect, from a holistic point of view, across business and trade, industry and organization, technology, education, life choice, and religion.</p>
+      <p class="reveal">I studied mentorship businesses, including Mentor (The National Mentoring Partnership) and Mentoring Complete, paying close attention to frictions such as negative, unwanted, or painful experiences. Understanding the benefits and challenges for both sides helped me explore solutions that address needs, desires, and the overall experience.</p>
+      <p class="reveal">I interviewed a mentee, Trey, about his experience and how he met his mentor. They worked in different businesses. His mentor organically guided him in his business endeavors and shared specific knowledge that helped his newly founded company grow. Both benefited: when Trey's business did well, their working relationship and business opportunities grew. Trey's motivation was to make money, build a network, get advice, and create business opportunities.</p>
+      <p class="reveal">Persona: Trey Baumann, co-founder and business owner in water damage restoration.</p>
+
+      <h3 class="reveal">Ideation Phase</h3>
+      <p class="reveal">The strategy was to define the user journey and behavior scenarios for making the connection. These diagrams show how users navigate from a holistic view through onboarding to bridging the gap between mentor and mentee.</p>
+    </div>
+    <div class="wrap">
+      <figure class="case-figure reveal">
+        <img src="../images/case-studies/mentor-info-arch.png?v=1" alt="Mentorship information architecture" width="1920" height="1152" loading="lazy">
+        <figcaption>Information architecture</figcaption>
+      </figure>
+      <figure class="case-figure reveal">
+        <img src="../images/case-studies/mentor-user-flow.png?v=1" alt="Holistic user flow" width="1920" height="1152" loading="lazy">
+        <figcaption>Holistic user flow</figcaption>
+      </figure>
+      <figure class="case-figure reveal">
+        <img src="../images/case-studies/mentor-onboarding-wireframe.png?v=1" alt="Onboarding user flow wireframe" width="1920" height="1152" loading="lazy">
+        <figcaption>Onboarding user flow</figcaption>
+      </figure>
+      <figure class="case-figure reveal">
+        <img src="../images/case-studies/mentor-connection-wireframe.png?v=1" alt="Connection user flow wireframe" width="1920" height="1152" loading="lazy">
+        <figcaption>Bridge connection</figcaption>
+      </figure>
+    </div>
+    <div class="wrap narrow">
+
+      <h3 class="reveal">Interaction Design Phase</h3>
+      <p class="reveal">The last step was high-fidelity design showing the pathways to connection from various entry points, and ways to keep users engaged.</p>
+    </div>
+    <div class="wrap">
+      <figure class="case-figure reveal">
+        <img src="../images/case-studies/mentor-signin.png?v=1" alt="Sign-in process design" width="1920" height="1152" loading="lazy">
+        <figcaption>Sign-in process</figcaption>
+      </figure>
+      <figure class="case-figure reveal">
+        <img src="../images/case-studies/mentor-onboarding-design.png?v=1" alt="Onboarding process design" width="1920" height="1152" loading="lazy">
+        <figcaption>Onboarding process</figcaption>
+      </figure>
+      <figure class="case-figure reveal">
+        <img src="../images/case-studies/mentor-connection-design.png?v=1" alt="Connection methods design" width="1920" height="1152" loading="lazy">
+        <figcaption>Connection methods</figcaption>
+      </figure>
+      <figure class="case-figure reveal">
+        <img src="../images/case-studies/mentor-communication-design.png?v=1" alt="Discovery and communication design" width="1920" height="1152" loading="lazy">
+        <figcaption>Discovery &amp; communication</figcaption>
+      </figure>
+      <figure class="case-figure reveal">
+        <img src="../images/case-studies/mentor-bridge-design.png?v=1" alt="Bridge the connection design" width="1920" height="1152" loading="lazy">
+        <figcaption>Bridge the connection</figcaption>
+      </figure>
+    </div>
+    <div class="wrap narrow">
+
+      <h2 class="reveal">Conclusion</h2>
+      <p class="reveal">This project validated the process and sharpened my skill set. Research and discovery were the fundamental tools for insight into the principles and behaviors between mentor and mentee, and how each side benefits. The result helped solve problems around identifying preferences and motivation by configuring schedules, aligning communication methods, and specifying common locations and shared interests.</p>
+      <p class="reveal">The one thing left was user testing to confirm the theories and hypotheses, and to see whether the concept addressed the commitment problem and opened more opportunities to connect with people seeking advice.</p>
+
+      <div class="case-cta reveal">
+        <p>Like what you see?</p>
+        <a class="btn-connect" href="../#contact">Let's talk
+          <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </a>
+      </div>
+      <nav class="case-nav reveal" aria-label="Case study navigation">
+        <a href="../#work">&larr; Back to selected work</a>
+        <a href="cpanel-store.html">Next: cPanel Store &rarr;</a>
+      </nav>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <a class="foot-logo" href="../#top" aria-label="Back to top">
+      <svg viewBox="0 0 150 153.76" width="30" height="31" aria-hidden="true"><path fill="currentColor" d="M58,82.65s3,16,25,16v28.14c-21,0-52.8-14.17-52.8-44.31,0-7.07.07-13.51.07-19.3L0,93.46c0,.16.08.32.12.48L0,93.88v59.88H92.09L92,71S89,55,67,55V26.86c20,0,52.84,14.17,52.84,44.31,0,6.92-.07,13.24-.07,18.93L150,59.88v0l0,0V0H57.93Z"/></svg>
+    </a>
+    <div class="foot-row">
+      <p>© <span id="year">2026</span> Long Duong.</p>
+      <p>Designed &amp; built with care in Houston.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../script.js?v=32"></script>
+</body>
+</html>
