@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://longster.github.io/lduongh/sitemap.xml
+Sitemap: https://lduong.com/sitemap.xml
