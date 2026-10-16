@@ -399,7 +399,7 @@ section { scroll-margin-top: 84px; }
 .case-icon-row svg { width: 56px; height: 56px; margin-bottom: 1.2rem; }
 .case-icon-row h3 { font-size: 1.25rem; margin: 0 0 0.6rem; }
 .case-icon-row p { margin: 0; font-size: 1rem; line-height: 1.65; }
-.case-callout { background: var(--paper-alt); padding: 3rem 2rem; text-align: center; margin: 2.5rem 0; font-size: 1.15rem; line-height: 1.6; }
+.case-callout { background: var(--paper-alt); border: 1px solid var(--line); border-radius: 14px; padding: 3rem 2rem; text-align: center; margin: 2.5rem 0; font-size: 1.15rem; line-height: 1.6; }
 .case-nav { display: flex; justify-content: space-between; gap: 1rem; margin-top: 3rem; flex-wrap: wrap; }
 .case-nav a { color: var(--accent-deep); text-decoration: none; font-weight: 700; }
 .case-nav a:hover { text-decoration: underline; }
