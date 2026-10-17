@@ -3,8 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0c0c0e" media="(prefers-color-scheme: dark)">
 <title>Long Duong, Sr. UX/UI Designer to Product Manager</title>
 <meta name="description" content="Long Duong is a Senior UX/UI Designer in Houston, TX, moving into product management and crafting simple digital experiences that feel human.">
 <link rel="canonical" href="https://lduong.com/">
@@ -48,7 +46,8 @@
 <link rel="apple-touch-icon" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="image" href="images/portrait.jpg?v=2" fetchpriority="high">
+<link rel="preload" as="image" media="(max-width: 640px)" href="images/portrait-400.jpg?v=1" fetchpriority="high">
+<link rel="preload" as="image" media="(min-width: 641px)" href="images/portrait.jpg?v=2" fetchpriority="high">
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet"></noscript>
@@ -106,11 +105,11 @@
       <div class="hero-text">
         <img class="hero-mark logo-dark" src="images/logo.svg" width="54" height="55" alt="Long Duong logo">
         <img class="hero-mark logo-light" src="images/logo-white.svg" width="54" height="55" alt="Long Duong logo">
-        <p class="eyebrow reveal">Houston, Texas</p>
-        <h1 class="reveal">Long<br>Duong</h1>
-        <p class="hero-role reveal">Sr. UX/UI Designer <span class="arrow" aria-hidden="true">→</span> Product Manager</p>
-        <p class="hero-lede reveal">I turn complex problems into simple, intuitive experiences. Nearly three decades across software, medical, and consulting. Now shaping product at NFP.</p>
-        <div class="hero-socials reveal">
+        <p class="eyebrow">Houston, Texas</p>
+        <h1>Long<br>Duong</h1>
+        <p class="hero-role">Sr. UX/UI Designer <span class="arrow" aria-hidden="true">→</span> Product Manager</p>
+        <p class="hero-lede">I turn complex problems into simple, intuitive experiences. Nearly three decades across software, medical, and consulting. Now shaping product at NFP.</p>
+        <div class="hero-socials">
           <a href="https://www.facebook.com/lduongh" target="_blank" rel="noopener" aria-label="Facebook, opens in new tab">
             <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.9.3-1.5 1.6-1.5h1.3V4.9c-.3 0-1.1-.1-2-.1-2 0-3.4 1.2-3.4 3.5V11H8.5v3H11v7h2.5z"/></svg>
           </a>
@@ -122,8 +121,11 @@
           </a>
         </div>
       </div>
-      <div class="hero-photo reveal">
-        <img src="images/portrait.jpg?v=2" alt="Portrait of Long Duong" fetchpriority="high" width="800" height="1200">
+      <div class="hero-photo">
+        <picture>
+          <source media="(max-width: 640px)" srcset="images/portrait-400.jpg?v=1">
+          <img src="images/portrait.jpg?v=2" alt="Portrait of Long Duong" fetchpriority="high" width="800" height="1200">
+        </picture>
       </div>
     </div>
     <a class="scroll-cue" href="#about" aria-label="Scroll to about">
