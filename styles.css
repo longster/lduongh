@@ -539,6 +539,8 @@ section { scroll-margin-top: 84px; }
 .foot-logo:hover { color: var(--accent); }
 .foot-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
 .site-footer p { color: var(--muted); font-size: 0.92rem; }
+.site-footer a.foot-design { color: var(--muted); text-decoration: none; transition: color 0.25s ease; }
+.site-footer a.foot-design:hover { color: var(--accent-deep); }
 
 /* ---------- responsive ---------- */
 @media (max-width: 900px) {
