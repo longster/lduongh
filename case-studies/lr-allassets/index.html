@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LR AllAssets, Case Study by Long Duong</title>
+<meta name="description" content="Redesign and front-end implementation of Lloyd's Register AllAssets asset performance management software. Standardized the interface across data uploads, mitigations, and the RBMI matrix, delivered on time and under a $10k budget.">
+<link rel="canonical" href="https://lduong.com/case-studies/lr-allassets/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Long Duong">
+<meta property="og:title" content="LR AllAssets, Case Study by Long Duong">
+<meta property="og:description" content="Redesign and front-end implementation of Lloyd's Register AllAssets asset performance management software. Standardized the interface across data uploads, mitigations, and the RBMI matrix, delivered on time and under a $10k budget.">
+<meta property="og:url" content="https://lduong.com/case-studies/lr-allassets/">
+<meta property="og:image" content="https://lduong.com/images/case-studies/lr-cover.jpg?v=1">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="LR AllAssets, Case Study by Long Duong">
+<meta name="twitter:description" content="Redesign and front-end implementation of Lloyd's Register AllAssets asset performance management software. Standardized the interface across data uploads, mitigations, and the RBMI matrix, delivered on time and under a $10k budget.">
+<meta name="twitter:image" content="https://lduong.com/images/case-studies/lr-cover.jpg?v=1">
+<link rel="icon" type="image/svg+xml" href="../../images/logo.svg" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/svg+xml" href="../../images/logo-white.svg" media="(prefers-color-scheme: dark)">
+<link rel="apple-touch-icon" href="../../favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+<script>
+(function(){try{var t=localStorage.getItem('ld-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZN2ECQF2DN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-ZN2ECQF2DN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "u0vo263eke");
+</script>
+<link rel="stylesheet" href="../../styles.css?v=56">
+</head>
+<body>
+<canvas id="bgCanvas" aria-hidden="true"></canvas>
+
+<header class="site-nav" id="siteNav">
+  <a class="nav-logo" href="../../#top" aria-label="Back to top">
+    <svg viewBox="0 0 150 153.76" width="30" height="31" aria-hidden="true"><path fill="currentColor" d="M58,82.65s3,16,25,16v28.14c-21,0-52.8-14.17-52.8-44.31,0-7.07.07-13.51.07-19.3L0,93.46c0,.16.08.32.12.48L0,93.88v59.88H92.09L92,71S89,55,67,55V26.86c20,0,52.84,14.17,52.84,44.31,0,6.92-.07,13.24-.07,18.93L150,59.88v0l0,0V0H57.93Z"/></svg>
+  </a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="../../#about">About</a>
+    <a href="../../#expertise">Expertise</a>
+    <a href="../../#experience">Experience</a>
+    <a href="../../#work">Work</a>
+  </nav>
+  <div class="nav-actions">
+    <button class="theme-toggle" id="themeToggle" data-state="auto" aria-label="Theme: auto. Activate to change.">
+      <svg class="tt-auto" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor"/></svg>
+      <svg class="tt-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2.5v2.3M12 19.2v2.3M2.5 12h2.3M19.2 12h2.3M5.2 5.2l1.6 1.6M17.2 17.2l1.6 1.6M18.8 5.2l-1.6 1.6M6.8 17.2l-1.6 1.6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <svg class="tt-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+    </button>
+    <a class="btn-connect" href="../../#contact">Let's talk
+      <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="case-hero">
+    <div class="wrap narrow">
+      <p class="kicker reveal">Case Study</p>
+      <h1 class="reveal">LR AllAssets</h1>
+      <p class="case-lede reveal">Lloyd's Register AllAssets is asset performance management software that helps users focus on critical equipment while optimizing inspection and maintenance. I redesigned the interface and implemented it in front-end code to reduce unplanned downtime and improve safety, equipment availability, and reliability.</p>
+      <div class="case-meta reveal">
+        <div>
+          <h2>Role</h2>
+          <p>UI Design, Interaction Design, Front-End Development</p>
+        </div>
+        <div>
+          <h2>Timeline</h2>
+          <p>5 months from requirements through design, QA, and development.</p>
+        </div>
+        <div>
+          <h2>Context</h2>
+          <p>Contracted part-time while working a full-time job. $10k budget. Team of 6 across the UK and Houston offices.</p>
+        </div>
+        <div>
+          <h2>Audience</h2>
+          <p>Engineers, inspectors, managers, and maintenance staff.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-body">
+    <div class="wrap">
+      <figure class="case-figure reveal">
+        <img src="../../images/case-studies/lr-cover.jpg?v=1" alt="Lloyd's Register AllAssets" width="1920" height="768">
+        <figcaption>Lloyd's Register AllAssets</figcaption>
+      </figure>
+    </div>
+    <div class="wrap narrow">
+
+      <h2 class="reveal">Situation</h2>
+      <p class="reveal">Before this project, I worked for LR as a UI developer for several years. I knew their software, Arivu and RBMI, which had been rebuilt from the ground up as Lloyd's Register AllAssets. When they reached out, they needed help with UI design and front-end development because they knew my past work.</p>
+      <p class="reveal">They wanted to focus on three pages: data uploads, mitigations, and the RBMI matrix. Each page gives end users tools to upload, assess, run analysis, and execute maintenance to extend asset life cycles. I put together a preliminary proposal and explained the UI principles that would improve return on investment by reducing training and support, increasing productivity, and protecting the integrity of the software. The manager approved the project with a $10k budget and a six-month window.</p>
+      <p class="reveal">I performed analysis, updated the design, and implemented the changes in front-end source code. I collaborated with a UX researcher, developers, managers, and quality assurance across the UK and Houston offices.</p>
+
+      <h2 class="reveal">Process</h2>
+      <p class="reveal">My approach was a three-step process. I analyzed the existing platform by understanding how it worked and identifying areas for improvement. I then created a design solution that addressed the problems and applied the new enhancements in the front-end source code.</p>
+      <div class="case-icon-row reveal">
+        <div>
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="27" cy="27" r="18"/><path d="M40 40 L54 54"/></svg>
+          <h3>Analyze &amp; Identify Issues</h3>
+          <p>Analyzed the existing platform.</p>
+        </div>
+        <div>
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="32" cy="32" r="22"/><path d="M24 26 A9 9 0 0 1 41 26 C41 31 36 31 34 35"/><circle cx="33" cy="44" r="1.6" fill="currentColor" stroke="none"/></svg>
+          <h3>Provide Solutions</h3>
+          <p>Identified issues and proposed solutions.</p>
+        </div>
+        <div>
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="10" y="12" width="44" height="40" rx="3"/><path d="M10 24 H54"/><path d="M26 24 V52"/></svg>
+          <h3>Implement Enhancements</h3>
+          <p>Implemented the new enhancements.</p>
+        </div>
+      </div>
+
+      <h3 class="reveal">Analysis</h3>
+      <p class="reveal">There were significant areas that impacted the way users perceived and processed information. The information and interfaces did not help or support human perception and cognitive load. The colors and patterns were inconsistent and provided no clear indicator of what action to perform. The information structure made it harder to distinguish one thing from another, lacking visual hierarchy and separation. Those are fundamental issues that hurt the overall experience of interacting with the platform.</p>
+      <div class="case-icon-row reveal">
+        <div>
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="14" y="14" width="14" height="14"/><rect x="36" y="14" width="14" height="14"/><rect x="14" y="36" width="14" height="14"/><rect x="36" y="36" width="14" height="14"/></svg>
+          <p>Inconsistent UI elements</p>
+        </div>
+        <div>
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="32" cy="32" r="22"/><path d="M24 24 L40 40 M40 24 L24 40"/></svg>
+          <p>Miscues &amp; false signifiers</p>
+        </div>
+        <div>
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M32 10 L56 22 L32 34 L8 22 Z"/><path d="M12 33 L32 43 L52 33"/><path d="M12 44 L32 54 L52 44"/></svg>
+          <p>Hierarchy &amp; organization</p>
+        </div>
+      </div>
+      <p class="reveal">One root cause sat underneath it all: the company had bought a template from CoreUI, and multiple developers had implemented proprietary algorithms, functionality, and features across all pages without standardizing the brand or visual elements.</p>
+
+      <h3 class="reveal">Visual Elements</h3>
+      <p class="reveal">I highlighted the design elements that help users evaluate and process information quickly, without guessing or overloading their senses: lines, typography, shapes, form, color palette, and texture.</p>
+
+      <h3 class="reveal">Design Principles</h3>
+      <p class="reveal">I applied principles that bridge software language and human interaction so users can understand and perform an action: unity, hierarchy, scale, Gestalt, balance, focus, space, contrast, and similarity.</p>
+
+      <h2 class="reveal">Design</h2>
+      <p class="reveal">Below are the before and after results. The optimizations addressed how end users perceive and process information, with a clear hierarchy and indicators of what action to take.</p>
+    </div>
+    <div class="wrap">
+      <figure class="case-figure reveal zoomable">
+        <img src="../../images/case-studies/lr-sidebar-nav.png?v=1" alt="Redesigned sidebar navigation" width="1920" height="1152" loading="lazy">
+        <figcaption>Sidebar menu</figcaption>
+      </figure>
+      <div class="case-screens two reveal">
+        <figure class="zoomable">
+          <img src="../../images/case-studies/lr-upload-before.png?v=1" alt="Data uploads page before redesign" width="2000" height="1200" loading="lazy">
+          <figcaption>Data uploads, before</figcaption>
+        </figure>
+        <figure class="zoomable">
+          <img src="../../images/case-studies/lr-upload-after.png?v=1" alt="Data uploads page after redesign" width="2000" height="1200" loading="lazy">
+          <figcaption>Data uploads, after</figcaption>
+        </figure>
+      </div>
+      <div class="case-screens two reveal">
+        <figure class="zoomable">
+          <img src="../../images/case-studies/lr-matrix-before.png?v=1" alt="RBMI matrix page before redesign" width="1920" height="1152" loading="lazy">
+          <figcaption>RBMI matrix, before</figcaption>
+        </figure>
+        <figure class="zoomable">
+          <img src="../../images/case-studies/lr-matrix-after.png?v=1" alt="RBMI matrix page after redesign" width="2000" height="1200" loading="lazy">
+          <figcaption>RBMI matrix, after</figcaption>
+        </figure>
+      </div>
+      <div class="case-screens two reveal">
+        <figure class="zoomable">
+          <img src="../../images/case-studies/lr-files-before.png?v=1" alt="Files page before redesign" width="2000" height="1200" loading="lazy">
+          <figcaption>Files, before</figcaption>
+        </figure>
+        <figure class="zoomable">
+          <img src="../../images/case-studies/lr-files-after.png?v=1" alt="Files page after redesign" width="2000" height="1200" loading="lazy">
+          <figcaption>Files, after</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="wrap narrow">
+
+      <h2 class="reveal">Conclusion</h2>
+      <p class="reveal">From assessment to design and implementation, education and recommendations drove the outcome. The project focused on solving the user interface, interaction, and style guide, and keeping the end-user experience consistent and easy to use, with less emphasis on UX research. Design principles and visual aspects still played a role in user experience around input, process, and output.</p>
+      <p class="reveal">I later learned Lloyd's Register had hired a UX researcher while the project was underway, but usability testing of the redesign was outside the contracted agreement. I completed the project on time, kept it under the $10k budget, and created a UI language that let LR evolve with users in mind.</p>
+
+      <div class="case-cta reveal">
+        <p>Like what you see?</p>
+        <a class="btn-connect" href="../../#contact">Let's talk
+          <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </a>
+      </div>
+      <nav class="case-nav reveal" aria-label="Case study navigation">
+        <a href="../../#work">&larr; Back to selected work</a>
+        <a href="../hdn-website/">Next: HDN Website &rarr;</a>
+      </nav>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <a class="foot-logo" href="../../#top" aria-label="Back to top">
+      <svg viewBox="0 0 150 153.76" width="30" height="31" aria-hidden="true"><path fill="currentColor" d="M58,82.65s3,16,25,16v28.14c-21,0-52.8-14.17-52.8-44.31,0-7.07.07-13.51.07-19.3L0,93.46c0,.16.08.32.12.48L0,93.88v59.88H92.09L92,71S89,55,67,55V26.86c20,0,52.84,14.17,52.84,44.31,0,6.92-.07,13.24-.07,18.93L150,59.88v0l0,0V0H57.93Z"/></svg>
+    </a>
+    <div class="foot-row">
+      <p>© <span id="year">2026</span> Long Duong.</p>
+      <p><a class="foot-design" href="../../design/">Designed with care in Houston</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="../../script.js?v=34"></script>
+</body>
+</html>
