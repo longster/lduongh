@@ -130,6 +130,21 @@
 
       <h2 class="reveal">Approach</h2>
       <p class="reveal">Then I rebuilt it as plain HTML, CSS, and vanilla JavaScript, with no framework and no build step, hosted on GitHub Pages. I directed the build with AI assistance, which filled the gap between what I knew and what the build needed, and let me move faster than hand-coding alone. Every result got verified against the design and against real visitor behavior, so the final product reflects my direction and the discovery along the way, not just output. One page holds the directory, events, job resources, guides, and FAQs, with search and filters across all of it. The design carries a connected-nodes network motif in the hero, a nod to the community the site serves.</p>
+      </div>
+      <div class="wrap">
+      <figure class="case-figure reveal zoomable">
+        <img src="../../images/case-studies/hdn-new-hero.jpg?v=1" alt="New Houston Deaf Network homepage hero with connected-nodes motif" width="1400" height="832" loading="lazy">
+        <figcaption>New homepage</figcaption>
+      </figure>
+      </div>
+      <div class="wrap">
+      <figure class="case-figure reveal zoomable">
+        <img src="../../images/case-studies/hdn-new-directory.jpg?v=1" alt="New directory with search field, filters, and listing cards" width="1400" height="1186" loading="lazy">
+        <figcaption>New directory with search and filters</figcaption>
+      </figure>
+      </div>
+      <div class="wrap narrow">
+
       <p class="reveal">The bigger piece was the pipeline behind the page. A Get Listed form posts to a Cloudflare Worker, which writes the submission to a Notion holding state and sends a confirmation email. Nothing publishes until I approve it in Notion. A daily automated sync then rebuilds the site's data from the approved rows. The approval gate is absolute: no submission reaches the live site without review.</p>
       <div class="case-stats three reveal">
         <div class="case-stat">
@@ -151,6 +166,15 @@
 
       <h2 class="reveal">Results</h2>
       <p class="reveal">The new site went live on October 16, 2026, and ran clean for four days. On October 20 I cancelled the Framer subscription, and GitHub Pages became the only host. Traffic shifted in the same window, from Facebook-led at launch to search-led, with Google as the top referrer by the last week of October.</p>
+      </div>
+      <div class="wrap">
+      <figure class="case-figure reveal zoomable">
+        <img src="../../images/case-studies/hdn-new-events.jpg?v=1" alt="New featured event and event cards on the live site" width="1400" height="1038" loading="lazy">
+        <figcaption>New featured event</figcaption>
+      </figure>
+      </div>
+      <div class="wrap narrow">
+
       <p class="reveal">The pipeline proved itself in the first week. New listings went in and one inactive listing came out, all through the same Notion and sync flow, with no hand-editing of pages. The site keeps growing the same way: a submission, a review, a sync.</p>
       <p class="case-callout reveal">The same lesson I keep coming back to: research first, one clear system, then verify the built result against what real visitors actually do.</p>
 
