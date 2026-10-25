@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>cPanel Store &amp; License Management, Case Study by Long Duong</title>
+<meta name="description" content="Research driven redesign of the cPanel Store buying flow and license management. User testing uncovered a missing path to the store, and the fix lifted traffic 30% and sales over 5% in the first month.">
+<link rel="canonical" href="https://lduong.com/case-studies/cpanel-store/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Long Duong">
+<meta property="og:title" content="cPanel Store & License Management, Case Study by Long Duong">
+<meta property="og:description" content="Research driven redesign of the cPanel Store buying flow and license management. User testing uncovered a missing path to the store, and the fix lifted traffic 30% and sales over 5% in the first month.">
+<meta property="og:url" content="https://lduong.com/case-studies/cpanel-store/">
+<meta property="og:image" content="https://lduong.com/images/case-studies/cpanel-header.jpg?v=1">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="cPanel Store & License Management, Case Study by Long Duong">
+<meta name="twitter:description" content="Research driven redesign of the cPanel Store buying flow and license management. User testing uncovered a missing path to the store, and the fix lifted traffic 30% and sales over 5% in the first month.">
+<meta name="twitter:image" content="https://lduong.com/images/case-studies/cpanel-header.jpg?v=1">
+<link rel="icon" type="image/svg+xml" href="../../images/logo.svg" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/svg+xml" href="../../images/logo-white.svg" media="(prefers-color-scheme: dark)">
+<link rel="apple-touch-icon" href="../../favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+<script>
+(function(){try{var t=localStorage.getItem('ld-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZN2ECQF2DN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-ZN2ECQF2DN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "u0vo263eke");
+</script>
+<link rel="stylesheet" href="../../styles.css?v=56">
+</head>
+<body>
+<canvas id="bgCanvas" aria-hidden="true"></canvas>
+
+<header class="site-nav" id="siteNav">
+  <a class="nav-logo" href="../../#top" aria-label="Back to top">
+    <svg viewBox="0 0 150 153.76" width="30" height="31" aria-hidden="true"><path fill="currentColor" d="M58,82.65s3,16,25,16v28.14c-21,0-52.8-14.17-52.8-44.31,0-7.07.07-13.51.07-19.3L0,93.46c0,.16.08.32.12.48L0,93.88v59.88H92.09L92,71S89,55,67,55V26.86c20,0,52.84,14.17,52.84,44.31,0,6.92-.07,13.24-.07,18.93L150,59.88v0l0,0V0H57.93Z"/></svg>
+  </a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="../../#about">About</a>
+    <a href="../../#expertise">Expertise</a>
+    <a href="../../#experience">Experience</a>
+    <a href="../../#work">Work</a>
+  </nav>
+  <div class="nav-actions">
+    <button class="theme-toggle" id="themeToggle" data-state="auto" aria-label="Theme: auto. Activate to change.">
+      <svg class="tt-auto" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor"/></svg>
+      <svg class="tt-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2.5v2.3M12 19.2v2.3M2.5 12h2.3M19.2 12h2.3M5.2 5.2l1.6 1.6M17.2 17.2l1.6 1.6M18.8 5.2l-1.6 1.6M6.8 17.2l-1.6 1.6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <svg class="tt-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+    </button>
+    <a class="btn-connect" href="../../#contact">Let's talk
+      <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="case-hero">
+    <div class="wrap narrow">
+      <p class="kicker reveal">Case Study</p>
+      <h1 class="reveal">cPanel Store &amp; License Management</h1>
+      <p class="case-lede reveal">I designed and optimized the cPanel Store buying process and upselling offers to extend cPanel &amp; WHM capabilities, and improved license management after purchase.</p>
+      <div class="case-meta reveal">
+        <div>
+          <h2>Role</h2>
+          <p>UX Research, Information Architecture, Usability Testing, Wireframing, Interactive Prototype, UI Design</p>
+        </div>
+        <div>
+          <h2>Timeline</h2>
+          <p>3 months from research to design before handoff, plus 2 to 3 months to complete implementation.</p>
+        </div>
+        <div>
+          <h2>Context</h2>
+          <p>Oakley Capital acquired cPanel during the redesign phase, which brought many organizational changes.</p>
+        </div>
+        <div>
+          <h2>Audience</h2>
+          <p>cPanel Partners and small to medium-size businesses.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-body">
+          <div class="wrap">
+      <figure class="case-figure reveal">
+        <img src="../../images/case-studies/cpanel-header.jpg?v=1" alt="Redesigned cPanel Store homepage" width="1600" height="640">
+        <figcaption>cPanel Store</figcaption>
+      </figure>
+      </div>
+      <div class="wrap narrow">
+
+      <h2 class="reveal">Situation</h2>
+      <p class="reveal">The cPanel Store is a place to purchase cPanel &amp; WHM licenses and additional services directly, without going through partners. The objectives were to increase cPanel &amp; WHM sales, find ways to upsell tools that extend the cPanel &amp; WHM platform, and streamline license management.</p>
+      <p class="reveal">I worked in the marketing department, where I built strategies, executed all user research and testing, and diagrammed the sitemap, user flow, wireframe, interactive prototype, and design direction. I also coordinated, collaborated, and provided recommendations to the internal development team, ensuring a unified and consistent experience.</p>
+      <p class="case-callout reveal">The goal: find the pain points in buying, upselling, purchase time, and license management.</p>
+      </div>
+      <div class="wrap">
+      <figure class="case-figure reveal zoomable">
+        <img src="../../images/case-studies/cpanel-architecture.jpg?v=1" alt="cPanel Store information architecture" width="1400" height="840">
+        <figcaption>Original sitemap architecture</figcaption>
+      </figure>
+      </div>
+      <div class="wrap narrow">
+
+      <h2 class="reveal">Research Process</h2>
+      <p class="reveal">The research phase was about understanding the constraints in the current store. I collected, analyzed, and formulated plans to discover behavior patterns that impact the buying experience. Data collection such as monitoring task time, success and failure rates, complexity ratings, and error and observation notes gave me a benchmark to evaluate, explore a solution, and validate the user's goals.</p>
+      </div>
+      <div class="wrap">
+      <figure class="case-figure reveal zoomable">
+        <img src="../../images/case-studies/cpanel-store-old.jpg?v=1" alt="Original cPanel Store" width="1400" height="840">
+        <figcaption>Original cPanel Store</figcaption>
+      </figure>
+      </div>
+      <div class="wrap narrow">
+      <div class="case-icon-row reveal">
+        <div>
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 48 L22 30 L33 40 L54 16"/><path d="M43 16 H54 V27"/></svg>
+          <p>I gathered Google Analytics data, heatmaps, video recordings, customer service feedback, user flows, sitemaps, and an updated persona.</p>
+        </div>
+        <div>
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="26" cy="18" r="9"/><path d="M10 52 V46 C10 38 17 34 26 34 C35 34 42 38 42 46 V52"/><path d="M46 26 A8 8 0 0 1 54 17"/><path d="M50 41 C55 43 57 46 57 52"/></svg>
+          <p>I identified the type of UX metrics needed to develop appropriate scenarios and tasks. I recruited internal employees, performed user testing, and synthesized findings.</p>
+        </div>
+        <div>
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="10" y="12" width="44" height="40" rx="3"/><path d="M10 24 H54"/><path d="M26 24 V52"/></svg>
+          <p>I hypothesized and developed wireframes and interactive prototypes, then ran several quick user tests to validate the hypothesis.</p>
+        </div>
+      </div>
+
+      <h3 class="reveal">User Testing</h3>
+      <p class="reveal">User testing gathers quantitative and qualitative data and helps identify needs, desires, confusion, struggles, and anomalies we may overlook. Collecting evidence let us support recommendations, mitigate the risk of design changes, and measure return on investment against future iterations. I devised a plan and developed 10 scenarios with 10 tasks to test the current and newly redesigned store if time permitted, then conducted 20 user tests with internal executives and employees to identify common issues.</p>
+      <p class="reveal">There were three reasons for this approach. First, performing user tests in public was not something we were allowed to do, and the test data was not to be shared. Second, it educated executives and employees on the value of user testing. Third, it demonstrated the process by focusing on the end user's journey and objectives when purchasing products. Showing the methods of testing users' thought processes and interactions was a highlight that employees found invaluable. They saw the possibilities and benefits of testing product viability and optimizing the user experience.</p>
+      <p class="case-callout reveal">Planned and developed 10 scenarios with 10 tasks and conducted 20 user tests.</p>
+      <div class="case-stats four reveal">
+        <div class="case-stat">
+          <div class="num">10</div>
+          <p>Scenarios, each scenario contained a task</p>
+        </div>
+        <div class="case-stat">
+          <div class="num">20</div>
+          <p>People participated in user tests</p>
+        </div>
+        <div class="case-stat">
+          <div class="num">8</div>
+          <p>Executive Managers &amp; Product Owners</p>
+        </div>
+        <div class="case-stat">
+          <div class="num">15</div>
+          <p>Hours of videos recorded</p>
+        </div>
+      </div>
+
+      <h3 class="reveal">Discovery &amp; Findings</h3>
+      <p class="reveal">In testing, each user sat in a controlled environment with a computer starting from the cPanel main website, along with an instructional paper. Video recording took place before scenarios and tasks were read aloud. As users read and performed the tasks, confusion, inefficiency, pain points, and opportunities for improvement were revealed immediately. The main takeaway: users could not reach the store or manage licenses from the corporate site. That gap was fixed immediately. Once they reached a product page, the license types (Solo, VPS, or Dedicated) were confusing and frustrating to choose from based on the user's requirements. Another discovery: users did not understand that IP addresses were associated with the number of licenses to buy.</p>
+      <div class="scenario-card scenario-card-text reveal">
+        <span class="scenario-icon-wrap"><svg class="scenario-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="14" y="12" width="36" height="44" rx="4"/><rect x="24" y="6" width="16" height="8" rx="2"/><path d="M24 32 L29 37 L41 24"/></svg></span>
+        <div class="scenario-content">
+        <h3>One of the user test scenarios &amp; tasks</h3>
+        <ul>
+          <li><strong>Scenario:</strong> You have a server set up at home and need software that allows for server management for several clients. You discovered a solution that fits your needs.</li>
+          <li><strong>Task:</strong> Buy a monthly cPanel &amp; WHM license that allows you to sell web hosting and manage sites for at least 5 user accounts.</li>
+        </ul>
+        </div>
+      </div>
+      <div class="case-icon-row reveal">
+        <div>
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 32 H36"/><path d="M30 24 L38 32 L30 40"/><path d="M44 14 H52 A4 4 0 0 1 56 18 V46 A4 4 0 0 1 52 50 H44"/></svg>
+          <p>Users were unable to log in to manage their license(s) from the home page.</p>
+        </div>
+        <div>
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="32" cy="32" r="22"/><path d="M24 26 A9 9 0 0 1 41 26 C41 31 36 31 34 35"/><circle cx="33" cy="44" r="1.6" fill="currentColor" stroke="none"/></svg>
+          <p>Users could not determine which license to buy based on the number of customers they have.</p>
+        </div>
+        <div>
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 14 H15 L21 42 H51 L57 22 H19"/><circle cx="26" cy="52" r="3"/><circle cx="47" cy="52" r="3"/></svg>
+          <p>The user did not know the IP address was associated with the number of licenses.</p>
+        </div>
+      </div>
+      <div class="case-stats three reveal">
+        <div class="case-stat">
+          <div class="num">6m 11s</div>
+          <p>Average time</p>
+        </div>
+        <div class="case-stat">
+          <div class="num">65%</div>
+          <p>Task pass</p>
+        </div>
+        <div class="case-stat">
+          <div class="num">2.35/5</div>
+          <p>Difficulty rating</p>
+        </div>
+      </div>
+
+      <h2 class="reveal">Design Process</h2>
+      <p class="reveal">The next phase was where I hypothesized and explored practical solutions using the previous data. I collaborated with a content writer, marketers, and the product owner to gather content, kick off a low-fidelity wireframe, and structure the user journey from the entry point of the website to the end of purchasing and managing cPanel &amp; WHM licenses.</p>
+      </div>
+      <div class="wrap">
+      <figure class="case-figure reveal zoomable">
+        <img src="../../images/case-studies/cpanel-prototype.jpg?v=1" alt="Low-fidelity interactive prototype of the user flow" width="1400" height="840">
+        <figcaption>Low-fidelity interactive prototype</figcaption>
+      </figure>
+      </div>
+      <div class="wrap narrow">
+
+      <h3 class="reveal">Redesigning the Buying &amp; License Management Flow</h3>
+      <p class="reveal">I developed a new wireframe to address the confusion and common issues discovered in the research phase. I added functionality and features to streamline the experience and increase business opportunities, such as placing add-ons on the product page to extend platform capabilities and adding UI elements that let users include additional products without leaving the store. Other helpful additions were status and progress notifications, the ability to set the number of licenses tied to an IP address, purchase verifications, and visual cues to guide users toward their objectives.</p>
+      </div>
+      <div class="wrap">
+      <figure class="case-figure reveal zoomable">
+        <img src="../../images/case-studies/cpanel-wireframe.jpg?v=1" alt="User flow and wireframe diagram" width="1400" height="840">
+        <figcaption>User flow &amp; wireframe</figcaption>
+      </figure>
+      </div>
+      <div class="wrap narrow">
+
+      <h3 class="reveal">UI Design Concept</h3>
+      <p class="reveal">The final deliverable was to enhance the overall user interface and interaction, and finalize the design using the cPanel brand and style guide within the store and license management pages. The design shows what is possible on the page, such as adding, deleting, configuring and editing, renewing, and cloning a product, add-on, or service. I provided multiple visual cues for users to identify what action is possible and showed the status of their current situation.</p>
+      </div>
+      <div class="wrap">
+      <figure class="case-figure reveal zoomable">
+        <img src="../../images/case-studies/cpanel-order.jpg?v=1" alt="Configure order page design" width="1400" height="840">
+        <figcaption>Configure order</figcaption>
+      </figure>
+      </div>
+            <div class="wrap">
+      <figure class="case-figure reveal zoomable">
+        <img src="../../images/case-studies/cpanel-licenses.jpg?v=1" alt="Manage licenses page design" width="1400" height="840">
+        <figcaption>Manage licenses</figcaption>
+      </figure>
+      </div>
+      <div class="wrap narrow">
+
+      <h2 class="reveal">Conclusion</h2>
+      <div class="case-stats reveal">
+        <div class="case-stat">
+          <div class="num">30%</div>
+          <p>Increase in traffic after adding a navigation path from the home page to the store.</p>
+        </div>
+        <div class="case-stat">
+          <div class="num">5%+</div>
+          <p>Increase in sales in the first month after the fix.</p>
+        </div>
+      </div>
+      <p class="reveal">Performing user research revealed findings that let us rectify issues immediately, strategize, explore potential solutions, and validate assumptions. When we first discovered the disconnect between the home page and the store, we added a navigation button to connect the home page to the online store. We saw an increase of 30% in traffic, and sales were up by more than 5% in the first month. It was a defining moment of success that we took to heart when it came to user testing.</p>
+      <p class="reveal">I also received recognition after sharing the analysis and user testing results with those who participated. A few people came for advice to learn about user testing methods for their team.</p>
+      <p class="reveal">After handing off the final design to internal development, the leadership, product owners, and employees recognized the value of UX and UI improvement in the store. Unfortunately, I left for another opportunity before I could see the results in sales or whether the design changes had improved the online experience. I value user research early and often to ensure the best results we can rely on, without making guesses when building products.</p>
+
+      <div class="case-cta reveal">
+        <p>Like what you see?</p>
+        <a class="btn-connect" href="../../#contact">Let's talk
+          <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </a>
+      </div>
+      <nav class="case-nav reveal" aria-label="Case study navigation">
+        <a href="../../#work">&larr; Back to selected work</a>
+        <a href="../mentorship-app/">Next: Mentorship App &rarr;</a>
+      </nav>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <a class="foot-logo" href="../../#top" aria-label="Back to top">
+      <svg viewBox="0 0 150 153.76" width="30" height="31" aria-hidden="true"><path fill="currentColor" d="M58,82.65s3,16,25,16v28.14c-21,0-52.8-14.17-52.8-44.31,0-7.07.07-13.51.07-19.3L0,93.46c0,.16.08.32.12.48L0,93.88v59.88H92.09L92,71S89,55,67,55V26.86c20,0,52.84,14.17,52.84,44.31,0,6.92-.07,13.24-.07,18.93L150,59.88v0l0,0V0H57.93Z"/></svg>
+    </a>
+    <div class="foot-row">
+      <p>© <span id="year">2026</span> Long Duong.</p>
+      <p><a class="foot-design" href="../../design/">Designed with care in Houston</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="../../script.js?v=34"></script>
+</body>
+</html>
