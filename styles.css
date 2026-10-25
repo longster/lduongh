@@ -358,6 +358,8 @@ section { scroll-margin-top: 84px; }
 .case-body p { margin-bottom: 1.2rem; }
 .case-body ul { margin: 0 0 1.2rem 1.4rem; }
 .case-body li { margin-bottom: 0.5rem; }
+.case-body p a { color: var(--accent-deep); }
+.case-body p a:hover { text-decoration: underline; }
 .case-figure { margin: 2.2rem 0 2.8rem; }
 .case-figure img { width: 100%; height: auto; display: block; border: 1px solid var(--line); border-radius: 14px; }
 .case-figure figcaption { color: var(--muted); font-size: 0.92rem; margin-top: 0.7rem; text-align: center; }
