@@ -121,8 +121,14 @@
       <div class="wrap narrow">
       <p class="case-callout reveal">The goal: make it easier for the community to find resources and each other, with a site one person can keep running. The way to sustain that solo was a site that costs almost nothing, needs almost no maintenance, and takes submissions without hand-editing pages.</p>
 
-      <h2 class="reveal">Approach</h2>
+      <h2 class="reveal">Research</h2>
       <p class="reveal">I started with a full audit of the old site, covering accessibility, mobile behavior, and content. The fixes that came out of it set the bar for the rebuild: proper contrast in both themes, accordion headings built to the standard pattern, touch targets sized for phones, and a page that works with motion reduced.</p>
+      <p class="reveal">I worked through the research in conversation with an AI assistant. It helped me organize the audit, spot patterns in the recordings, and weigh options, and every decision that followed stayed mine.</p>
+      <p class="reveal">After launch, I watched session recordings and found the problem: about 34% of sessions had dead clicks. Visitors were tapping card bodies expecting them to open, but only the small icon buttons were links. The cards looked tappable and were not.</p>
+      <p class="reveal">The fix was to make the whole card the link, with the title carrying the destination and the icon buttons kept as their own targets above it. After the change, the next measurement showed dead clicks at 20%, down from 34%, and mobile became the majority of traffic. The drop lines up with the fix, and the recordings are what pointed at it in the first place.</p>
+      <p class="reveal">See the result live: <a href="https://houstondeafnetwork.com">houstondeafnetwork.com</a>.</p>
+
+      <h2 class="reveal">Approach</h2>
       <p class="reveal">Then I rebuilt it as plain HTML, CSS, and vanilla JavaScript, with no framework and no build step, hosted on GitHub Pages. I directed the build with AI assistance, which filled the gap between what I knew and what the build needed, and let me move faster than hand-coding alone. Every result got verified against the design and against real visitor behavior, so the final product reflects my direction and the discovery along the way, not just output. One page holds the directory, events, job resources, guides, and FAQs, with search and filters across all of it. The design carries a connected-nodes network motif in the hero, a nod to the community the site serves.</p>
       <p class="reveal">The bigger piece was the pipeline behind the page. A Get Listed form posts to a Cloudflare Worker, which writes the submission to a Notion holding state and sends a confirmation email. Nothing publishes until I approve it in Notion. A daily automated sync then rebuilds the site's data from the approved rows. The approval gate is absolute: no submission reaches the live site without review.</p>
       <div class="case-stats three reveal">
@@ -140,10 +146,6 @@
         </div>
       </div>
 
-      <h2 class="reveal">What the recordings showed</h2>
-      <p class="reveal">After launch, I watched session recordings and found the problem: about 34% of sessions had dead clicks. Visitors were tapping card bodies expecting them to open, but only the small icon buttons were links. The cards looked tappable and were not.</p>
-      <p class="reveal">The fix was to make the whole card the link, with the title carrying the destination and the icon buttons kept as their own targets above it. After the change, the next measurement showed dead clicks at 20%, down from 34%, and mobile became the majority of traffic. The drop lines up with the fix, and the recordings are what pointed at it in the first place.</p>
-      <p class="reveal">See the result live: <a href="https://houstondeafnetwork.com">houstondeafnetwork.com</a>.</p>
       </div>
       <div class="wrap narrow">
 
