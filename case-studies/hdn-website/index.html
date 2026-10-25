@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Houston Deaf Network Website, Case Study by Long Duong</title>
+<meta name="description" content="Rebuilding the Houston Deaf Network directory: from a Framer site to a static site with a submission-to-publish pipeline, directed and built with AI assistance, launched October 2026.">
+<link rel="canonical" href="https://lduong.com/case-studies/hdn-website/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Long Duong">
+<meta property="og:title" content="Houston Deaf Network Website, Case Study by Long Duong">
+<meta property="og:description" content="Rebuilding the Houston Deaf Network directory: from a Framer site to a static site with a submission-to-publish pipeline, directed and built with AI assistance, launched October 2026.">
+<meta property="og:url" content="https://lduong.com/case-studies/hdn-website/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Houston Deaf Network Website, Case Study by Long Duong">
+<meta name="twitter:description" content="Rebuilding the Houston Deaf Network directory: from a Framer site to a static site with a submission-to-publish pipeline, directed and built with AI assistance, launched October 2026.">
+<link rel="icon" type="image/svg+xml" href="../../images/logo.svg" media="(prefers-color-scheme: light)">
+<link rel="icon" type="image/svg+xml" href="../../images/logo-white.svg" media="(prefers-color-scheme: dark)">
+<link rel="apple-touch-icon" href="../../favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+<script>
+(function(){try{var t=localStorage.getItem('ld-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZN2ECQF2DN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-ZN2ECQF2DN');
+</script>
+<!-- Microsoft Clarity -->
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "u0vo263eke");
+</script>
+<link rel="stylesheet" href="../../styles.css?v=56">
+</head>
+<body>
+<canvas id="bgCanvas" aria-hidden="true"></canvas>
+
+<header class="site-nav" id="siteNav">
+  <a class="nav-logo" href="../../#top" aria-label="Back to top">
+    <svg viewBox="0 0 150 153.76" width="30" height="31" aria-hidden="true"><path fill="currentColor" d="M58,82.65s3,16,25,16v28.14c-21,0-52.8-14.17-52.8-44.31,0-7.07.07-13.51.07-19.3L0,93.46c0,.16.08.32.12.48L0,93.88v59.88H92.09L92,71S89,55,67,55V26.86c20,0,52.84,14.17,52.84,44.31,0,6.92-.07,13.24-.07,18.93L150,59.88v0l0,0V0H57.93Z"/></svg>
+  </a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="../../#about">About</a>
+    <a href="../../#expertise">Expertise</a>
+    <a href="../../#experience">Experience</a>
+    <a href="../../#work">Work</a>
+  </nav>
+  <div class="nav-actions">
+    <button class="theme-toggle" id="themeToggle" data-state="auto" aria-label="Theme: auto. Activate to change.">
+      <svg class="tt-auto" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor"/></svg>
+      <svg class="tt-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2.5v2.3M12 19.2v2.3M2.5 12h2.3M19.2 12h2.3M5.2 5.2l1.6 1.6M17.2 17.2l1.6 1.6M18.8 5.2l-1.6 1.6M6.8 17.2l-1.6 1.6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <svg class="tt-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+    </button>
+    <a class="btn-connect" href="../../#contact">Let's talk
+      <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="case-hero">
+    <div class="wrap narrow">
+      <p class="kicker reveal">Case Study</p>
+      <h1 class="reveal">Houston Deaf Network Website</h1>
+      <p class="case-lede reveal">A rebuild of the Houston Deaf Network directory, from a Framer site to a static site with a submission-to-publish pipeline I can run solo, directed by me and built with AI assistance.</p>
+      <div class="case-meta reveal">
+        <div>
+          <h2>Role</h2>
+          <p>UX Audit, Information Architecture, UI Design, Front-End Development, Automation Design, Analytics, AI-Assisted Build</p>
+        </div>
+        <div>
+          <h2>Timeline</h2>
+          <p>Designed and built October 2026, launched October 16, 2026.</p>
+        </div>
+        <div>
+          <h2>Context</h2>
+          <p>HoustonDeafNetwork, a community project I run solo, connecting Houston's deaf and hard of hearing community with local resources, events, and each other.</p>
+        </div>
+        <div>
+          <h2>Audience</h2>
+          <p>Houston's deaf and hard of hearing community, plus the businesses and organizations that serve them.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-body">
+      <div class="wrap">
+<div class="case-screens two reveal">
+        <figure class="zoomable">
+          <img src="../../images/case-studies/hdn-old-hero-dark.jpg?v=1" alt="Old Houston Deaf Network site, dark theme hero" width="1400" height="664" loading="lazy">
+          <figcaption>Old site, dark theme</figcaption>
+        </figure>
+        <figure class="zoomable">
+          <img src="../../images/case-studies/hdn-old-hero-light.jpg?v=1" alt="Old Houston Deaf Network site, light theme hero" width="1400" height="664" loading="lazy">
+          <figcaption>Old site, light theme</figcaption>
+        </figure>
+      </div>
+      </div>
+      <div class="wrap narrow">
+
+      <h2 class="reveal">Situation</h2>
+      <p class="reveal">HoustonDeafNetwork had an audience but a site that cost me every month and needed the builder for every change. The old site ran on Framer, which meant a subscription fee and a builder workflow just to update a listing. For a solo community project, that was the wrong shape: every edit went through me, and every month cost money whether anything changed or not.</p>
+      <p class="reveal">The site was already drawing steady traffic before the rebuild, with 319 sessions in August 2026. The problem was never demand. It was the cost and effort of keeping the site current, and a structure that made community submissions hard to take in.</p>
+      </div>
+      <div class="wrap">
+      <figure class="case-figure reveal">
+        <img src="../../images/case-studies/hdn-old-directory.jpg?v=1" alt="Old Houston Deaf Network site, directory list" width="1400" height="922" loading="lazy">
+        <figcaption>Old site, directory list</figcaption>
+      </figure>
+      </div>
+      <div class="wrap narrow">
+      <p class="case-callout reveal">The goal: make it easier for the community to find resources and each other, with a site one person can keep running. The way to sustain that solo was a site that costs almost nothing, needs almost no maintenance, and takes submissions without hand-editing pages.</p>
+
+      <h2 class="reveal">Approach</h2>
+      <p class="reveal">I started with a full audit of the old site, covering accessibility, mobile behavior, and content. The fixes that came out of it set the bar for the rebuild: proper contrast in both themes, accordion headings built to the standard pattern, touch targets sized for phones, and a page that works with motion reduced.</p>
+      <p class="reveal">Then I rebuilt it as plain HTML, CSS, and vanilla JavaScript, with no framework and no build step, hosted on GitHub Pages. I directed the build with AI assistance, which filled the gap between what I knew and what the build needed, and let me move faster than hand-coding alone. Every result got verified against the design and against real visitor behavior, so the final product reflects my direction and the discovery along the way, not just output. One page holds the directory, events, job resources, guides, and FAQs, with search and filters across all of it. The design carries a connected-nodes network motif in the hero, a nod to the community the site serves.</p>
+      <p class="reveal">The bigger piece was the pipeline behind the page. A Get Listed form posts to a Cloudflare Worker, which writes the submission to a Notion holding state and sends a confirmation email. Nothing publishes until I approve it in Notion. A daily automated sync then rebuilds the site's data from the approved rows. The approval gate is absolute: no submission reaches the live site without review.</p>
+      <div class="case-stats three reveal">
+        <div class="case-stat">
+          <div class="num">38</div>
+          <p>Directory records at launch, plus 3 events, 16 job resources, 8 FAQs, and 4 guides</p>
+        </div>
+        <div class="case-stat">
+          <div class="num">88</div>
+          <p>Mobile Lighthouse performance score at launch, with 100 for accessibility, best practices, and SEO</p>
+        </div>
+        <div class="case-stat">
+          <div class="num">0</div>
+          <p>Submissions published without review: every listing passes through the approval gate</p>
+        </div>
+      </div>
+
+      <h2 class="reveal">What the recordings showed</h2>
+      <p class="reveal">After launch, I watched session recordings and found the problem: about 34% of sessions had dead clicks. Visitors were tapping card bodies expecting them to open, but only the small icon buttons were links. The cards looked tappable and were not.</p>
+      <p class="reveal">The fix was to make the whole card the link, with the title carrying the destination and the icon buttons kept as their own targets above it. After the change, the next measurement showed dead clicks at 20%, down from 34%, and mobile became the majority of traffic. The drop lines up with the fix, and the recordings are what pointed at it in the first place.</p>
+      <p class="reveal">See the result live: <a href="https://houstondeafnetwork.com">houstondeafnetwork.com</a>.</p>
+      </div>
+      <div class="wrap narrow">
+
+      <h2 class="reveal">Results</h2>
+      <p class="reveal">The new site went live on October 16, 2026, and ran clean for four days. On October 20 I cancelled the Framer subscription, and GitHub Pages became the only host. Traffic shifted in the same window, from Facebook-led at launch to search-led, with Google as the top referrer by the last week of October.</p>
+      <p class="reveal">The pipeline proved itself in the first week. New listings went in and one inactive listing came out, all through the same Notion and sync flow, with no hand-editing of pages. The site keeps growing the same way: a submission, a review, a sync.</p>
+      <p class="case-callout reveal">The same lesson I keep coming back to: research first, one clear system, then verify the built result against what real visitors actually do.</p>
+
+      <div class="case-cta reveal">
+        <p>Like what you see?</p>
+        <a class="btn-connect" href="../../#contact">Let's talk
+          <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </a>
+      </div>
+      <nav class="case-nav reveal" aria-label="Case study navigation">
+        <a href="../../#work">&larr; Back to selected work</a>
+        <a href="../uh-mobile-maps/">Next: UH Mobile Maps &rarr;</a>
+      </nav>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <a class="foot-logo" href="../../#top" aria-label="Back to top">
+      <svg viewBox="0 0 150 153.76" width="30" height="31" aria-hidden="true"><path fill="currentColor" d="M58,82.65s3,16,25,16v28.14c-21,0-52.8-14.17-52.8-44.31,0-7.07.07-13.51.07-19.3L0,93.46c0,.16.08.32.12.48L0,93.88v59.88H92.09L92,71S89,55,67,55V26.86c20,0,52.84,14.17,52.84,44.31,0,6.92-.07,13.24-.07,18.93L150,59.88v0l0,0V0H57.93Z"/></svg>
+    </a>
+    <div class="foot-row">
+      <p>© <span id="year">2026</span> Long Duong.</p>
+      <p><a class="foot-design" href="../../design/">Designed with care in Houston</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="../../script.js?v=34"></script>
+</body>
+</html>
