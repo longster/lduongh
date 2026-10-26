@@ -266,6 +266,7 @@ section { scroll-margin-top: 84px; }
   transition: padding 0.25s ease;
 }
 .expert-list li:hover { padding-left: 0.6rem; }
+.expert-list + .btn-connect { margin-top: 2rem; }
 .expert-list .num {
   font-family: var(--display); font-weight: 300; font-size: 1rem;
   color: var(--accent-deep); letter-spacing: 0.1em; padding-top: 0.35rem;
